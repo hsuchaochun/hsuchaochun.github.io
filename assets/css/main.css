@@ -2056,6 +2056,269 @@ ul.icons {
   body.is-preload #banner:before {
     opacity: 1; }
 
+/* Travel banner */
+#banner_travel {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("../../images/travelnphoto/singapore_watershow_3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+  display: -ms-flexbox;
+  height: 35rem !important;
+  min-height: 35rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+  #banner_travel input, #banner_travel select, #banner_travel textarea {
+    color: #ffffff; }
+  #banner_travel a {
+    color: #ce1b28; }
+  #banner_travel strong, #banner_travel b {
+    color: #ffffff; }
+  #banner_travel h1, #banner_travel h2, #banner_travel h3, #banner_travel h4, #banner_travel h5, #banner_travel h6 {
+    color: #ffffff; }
+  #banner_travel blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel input[type="submit"],
+  #banner_travel input[type="reset"],
+  #banner_travel input[type="button"],
+  #banner_travel button,
+  #banner_travel .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #banner_travel input[type="submit"]:hover,
+    #banner_travel input[type="reset"]:hover,
+    #banner_travel input[type="button"]:hover,
+    #banner_travel button:hover,
+    #banner_travel .button:hover {
+      box-shadow: inset 0 0 0 1px #ce1b28;
+      color: #ce1b28 !important; }
+      #banner_travel input[type="submit"]:hover:active,
+      #banner_travel input[type="reset"]:hover:active,
+      #banner_travel input[type="button"]:hover:active,
+      #banner_travel button:hover:active,
+      #banner_travel .button:hover:active {
+        background-color: rgba(206, 27, 40, 0.25); }
+    #banner_travel input[type="submit"].primary,
+    #banner_travel input[type="reset"].primary,
+    #banner_travel input[type="button"].primary,
+    #banner_travel button.primary,
+    #banner_travel .button.primary {
+      box-shadow: none;
+      background-color: #ce1b28;
+      color: #ffffff !important; }
+      #banner_travel input[type="submit"].primary:hover,
+      #banner_travel input[type="reset"].primary:hover,
+      #banner_travel input[type="button"].primary:hover,
+      #banner_travel button.primary:hover,
+      #banner_travel .button.primary:hover {
+        background-color: #e2212f;
+        box-shadow: none; }
+        #banner_travel input[type="submit"].primary:hover:active,
+        #banner_travel input[type="reset"].primary:hover:active,
+        #banner_travel input[type="button"].primary:hover:active,
+        #banner_travel button.primary:hover:active,
+        #banner_travel .button.primary:hover:active {
+          background-color: #b71824; }
+  #banner_travel label {
+    color: #ffffff; }
+  #banner_travel input[type="text"],
+  #banner_travel input[type="password"],
+  #banner_travel input[type="email"],
+  #banner_travel input[type="tel"],
+  #banner_travel input[type="search"],
+  #banner_travel input[type="url"],
+  #banner_travel select,
+  #banner_travel textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #banner_travel input[type="text"]:focus,
+    #banner_travel input[type="password"]:focus,
+    #banner_travel input[type="email"]:focus,
+    #banner_travel input[type="tel"]:focus,
+    #banner_travel input[type="search"]:focus,
+    #banner_travel input[type="url"]:focus,
+    #banner_travel select:focus,
+    #banner_travel textarea:focus {
+      border-color: #ce1b28;
+      box-shadow: 0 0 0 1px #ce1b28; }
+  #banner_travel select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #banner_travel select option {
+      color: rgba(255, 255, 255, 0.5);
+      background-color: #111111; }
+  #banner_travel input[type="checkbox"] + label,
+  #banner_travel input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.5); }
+    #banner_travel input[type="checkbox"] + label:before,
+    #banner_travel input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel input[type="checkbox"]:checked + label:before,
+  #banner_travel input[type="radio"]:checked + label:before {
+    background-color: #ce1b28;
+    border-color: #ce1b28;
+    color: #ffffff; }
+  #banner_travel input[type="checkbox"]:focus + label:before,
+  #banner_travel input[type="radio"]:focus + label:before {
+    border-color: #ce1b28;
+    box-shadow: 0 0 0 1px #ce1b28; }
+  #banner_travel ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #banner_travel :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #banner_travel ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #banner_travel :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #banner_travel ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #banner_travel table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #banner_travel table th {
+    color: #ffffff; }
+  #banner_travel table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #banner_travel .highlights .content {
+    background: #111111;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #banner_travel .testimonials .content {
+    background: #111111;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #banner_travel .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #banner_travel > .inner {
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+    position: relative;
+    z-index: 3; }
+    #banner_travel > .inner > :last-child {
+      margin-bottom: 0; }
+  #banner_travel h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+  #banner_travel p {
+    font-size: 1.5rem; }
+  #banner_travel a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none; }
+    #banner_travel a:hover {
+      color: #ffffff; }
+  #banner_travel video {
+    -moz-transform: translateX(50%) translateY(50%);
+    -webkit-transform: translateX(50%) translateY(50%);
+    -ms-transform: translateX(50%) translateY(50%);
+    transform: translateX(50%) translateY(50%);
+    bottom: 50%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 50%;
+    width: auto; }
+  #banner_travel:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    background: #111111;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+  #banner_travel:after {
+    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    webkit-linear-gradientidth: 100%;
+    width: 100%;
+    z-index: 1; }
+  #banner_travel.small {
+    height: 30vh !important;
+    min-height: 30vh; }
+  @media screen and (max-width: 1280px) {
+    #banner_travel video {
+      display: none; } }
+  @media screen and (max-width: 736px) {
+    #banner_travel {
+      height: auto !important;
+      min-height: 0;
+      padding: 4rem 2rem 4rem 2rem; }
+      #banner_travel .inner {
+        width: 100%; }
+      #banner_travel h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0; }
+      #banner_travel p {
+        font-size: 1.25rem; }
+      #banner_travel br {
+        display: none; }
+      #banner_travel .button {
+        width: 100%; } }
+  @media screen and (max-width: 480px) {
+    #banner_travel p {
+      font-size: 1rem; } }
+  body.is-preload #banner_travel .inner {
+    -moz-transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    transform: scale(0.99);
+    opacity: 0; }
+  body.is-preload #banner_travel:before {
+    opacity: 1; }
+
 /* CTA */
 #cta {
   background-color: #ce1b28;
@@ -2202,6 +2465,1338 @@ ul.icons {
     z-index: 3; }
   @media screen and (max-width: 980px) {
     #cta {
+      background-attachment: scroll; } }
+
+/* hawaii */
+#hawaii {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/plane_1.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #hawaii input, #hawaii select, #hawaii textarea {
+    color: #ffffff; }
+  #hawaii a {
+    color: #ffffff; }
+  #hawaii strong, #hawaii b {
+    color: #ffffff; }
+  #hawaii h1, #hawaii h2, #hawaii h3, #hawaii h4, #hawaii h5, #hawaii h6 {
+    color: #ffffff; }
+  #hawaii blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #hawaii code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #hawaii hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #hawaii input[type="submit"],
+  #hawaii input[type="reset"],
+  #hawaii input[type="button"],
+  #hawaii button,
+  #hawaii .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #hawaii input[type="submit"]:hover,
+    #hawaii input[type="reset"]:hover,
+    #hawaii input[type="button"]:hover,
+    #hawaii button:hover,
+    #hawaii .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #hawaii input[type="submit"]:hover:active,
+      #hawaii input[type="reset"]:hover:active,
+      #hawaii input[type="button"]:hover:active,
+      #hawaii button:hover:active,
+      #hawaii .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #hawaii input[type="submit"].primary,
+    #hawaii input[type="reset"].primary,
+    #hawaii input[type="button"].primary,
+    #hawaii button.primary,
+    #hawaii .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #hawaii input[type="submit"].primary:hover,
+      #hawaii input[type="reset"].primary:hover,
+      #hawaii input[type="button"].primary:hover,
+      #hawaii button.primary:hover,
+      #hawaii .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #hawaii input[type="submit"].primary:hover:active,
+        #hawaii input[type="reset"].primary:hover:active,
+        #hawaii input[type="button"].primary:hover:active,
+        #hawaii button.primary:hover:active,
+        #hawaii .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #hawaii label {
+    color: #ffffff; }
+  #hawaii input[type="text"],
+  #hawaii input[type="password"],
+  #hawaii input[type="email"],
+  #hawaii input[type="tel"],
+  #hawaii input[type="search"],
+  #hawaii input[type="url"],
+  #hawaii select,
+  #hawaii textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #hawaii input[type="text"]:focus,
+    #hawaii input[type="password"]:focus,
+    #hawaii input[type="email"]:focus,
+    #hawaii input[type="tel"]:focus,
+    #hawaii input[type="search"]:focus,
+    #hawaii input[type="url"]:focus,
+    #hawaii select:focus,
+    #hawaii textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #hawaii select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #hawaii select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #hawaii input[type="checkbox"] + label,
+  #hawaii input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #hawaii input[type="checkbox"] + label:before,
+    #hawaii input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #hawaii input[type="checkbox"]:checked + label:before,
+  #hawaii input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #hawaii input[type="checkbox"]:focus + label:before,
+  #hawaii input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #hawaii ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #hawaii :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #hawaii ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #hawaii :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #hawaii ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #hawaii table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #hawaii table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #hawaii table th {
+    color: #ffffff; }
+  #hawaii table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #hawaii table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #hawaii table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #hawaii .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #hawaii .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #hawaii .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #hawaii .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #hawaii {
+      background-attachment: scroll; } }
+
+/* nepal */
+#nepal {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/nepal_himalaya.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #nepal input, #nepal select, #nepal textarea {
+    color: #ffffff; }
+  #nepal a {
+    color: #ffffff; }
+  #nepal strong, #nepal b {
+    color: #ffffff; }
+  #nepal h1, #nepal h2, #nepal h3, #nepal h4, #nepal h5, #nepal h6 {
+    color: #ffffff; }
+  #nepal blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #nepal code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #nepal hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #nepal input[type="submit"],
+  #nepal input[type="reset"],
+  #nepal input[type="button"],
+  #nepal button,
+  #nepal .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #nepal input[type="submit"]:hover,
+    #nepal input[type="reset"]:hover,
+    #nepal input[type="button"]:hover,
+    #nepal button:hover,
+    #nepal .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #nepal input[type="submit"]:hover:active,
+      #nepal input[type="reset"]:hover:active,
+      #nepal input[type="button"]:hover:active,
+      #nepal button:hover:active,
+      #nepal .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #nepal input[type="submit"].primary,
+    #nepal input[type="reset"].primary,
+    #nepal input[type="button"].primary,
+    #nepal button.primary,
+    #nepal .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #nepal input[type="submit"].primary:hover,
+      #nepal input[type="reset"].primary:hover,
+      #nepal input[type="button"].primary:hover,
+      #nepal button.primary:hover,
+      #nepal .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #nepal input[type="submit"].primary:hover:active,
+        #nepal input[type="reset"].primary:hover:active,
+        #nepal input[type="button"].primary:hover:active,
+        #nepal button.primary:hover:active,
+        #nepal .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #nepal label {
+    color: #ffffff; }
+  #nepal input[type="text"],
+  #nepal input[type="password"],
+  #nepal input[type="email"],
+  #nepal input[type="tel"],
+  #nepal input[type="search"],
+  #nepal input[type="url"],
+  #nepal select,
+  #nepal textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #nepal input[type="text"]:focus,
+    #nepal input[type="password"]:focus,
+    #nepal input[type="email"]:focus,
+    #nepal input[type="tel"]:focus,
+    #nepal input[type="search"]:focus,
+    #nepal input[type="url"]:focus,
+    #nepal select:focus,
+    #nepal textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #nepal select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #nepal select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #nepal input[type="checkbox"] + label,
+  #nepal input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #nepal input[type="checkbox"] + label:before,
+    #nepal input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #nepal input[type="checkbox"]:checked + label:before,
+  #nepal input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #nepal input[type="checkbox"]:focus + label:before,
+  #nepal input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #nepal ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #nepal :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #nepal ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #nepal :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #nepal ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #nepal table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #nepal table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #nepal table th {
+    color: #ffffff; }
+  #nepal table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #nepal table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #nepal table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #nepal .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #nepal .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #nepal .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #nepal .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #nepal {
+      background-attachment: scroll; } }
+
+/* boston */
+#boston {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/plane_2.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #boston input, #boston select, #boston textarea {
+    color: #ffffff; }
+  #boston a {
+    color: #ffffff; }
+  #boston strong, #boston b {
+    color: #ffffff; }
+  #boston h1, #boston h2, #boston h3, #boston h4, #boston h5, #boston h6 {
+    color: #ffffff; }
+  #boston blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #boston code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #boston hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #boston input[type="submit"],
+  #boston input[type="reset"],
+  #boston input[type="button"],
+  #boston button,
+  #boston .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #boston input[type="submit"]:hover,
+    #boston input[type="reset"]:hover,
+    #boston input[type="button"]:hover,
+    #boston button:hover,
+    #boston .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #boston input[type="submit"]:hover:active,
+      #boston input[type="reset"]:hover:active,
+      #boston input[type="button"]:hover:active,
+      #boston button:hover:active,
+      #boston .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #boston input[type="submit"].primary,
+    #boston input[type="reset"].primary,
+    #boston input[type="button"].primary,
+    #boston button.primary,
+    #boston .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #boston input[type="submit"].primary:hover,
+      #boston input[type="reset"].primary:hover,
+      #boston input[type="button"].primary:hover,
+      #boston button.primary:hover,
+      #boston .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #boston input[type="submit"].primary:hover:active,
+        #boston input[type="reset"].primary:hover:active,
+        #boston input[type="button"].primary:hover:active,
+        #boston button.primary:hover:active,
+        #boston .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #boston label {
+    color: #ffffff; }
+  #boston input[type="text"],
+  #boston input[type="password"],
+  #boston input[type="email"],
+  #boston input[type="tel"],
+  #boston input[type="search"],
+  #boston input[type="url"],
+  #boston select,
+  #boston textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #boston input[type="text"]:focus,
+    #boston input[type="password"]:focus,
+    #boston input[type="email"]:focus,
+    #boston input[type="tel"]:focus,
+    #boston input[type="search"]:focus,
+    #boston input[type="url"]:focus,
+    #boston select:focus,
+    #boston textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #boston select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #boston select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #boston input[type="checkbox"] + label,
+  #boston input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #boston input[type="checkbox"] + label:before,
+    #boston input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #boston input[type="checkbox"]:checked + label:before,
+  #boston input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #boston input[type="checkbox"]:focus + label:before,
+  #boston input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #boston ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #boston :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #boston ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #boston :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #boston ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #boston table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #boston table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #boston table th {
+    color: #ffffff; }
+  #boston table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #boston table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #boston table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #boston .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #boston .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #boston .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #boston .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #boston {
+      background-attachment: scroll; } }
+
+/* pittsburgh */
+#pittsburgh {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/pittsburgh_nightscene_1.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #pittsburgh input, #pittsburgh select, #pittsburgh textarea {
+    color: #ffffff; }
+  #pittsburgh a {
+    color: #ffffff; }
+  #pittsburgh strong, #pittsburgh b {
+    color: #ffffff; }
+  #pittsburgh h1, #pittsburgh h2, #pittsburgh h3, #pittsburgh h4, #pittsburgh h5, #pittsburgh h6 {
+    color: #ffffff; }
+  #pittsburgh blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh input[type="submit"],
+  #pittsburgh input[type="reset"],
+  #pittsburgh input[type="button"],
+  #pittsburgh button,
+  #pittsburgh .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #pittsburgh input[type="submit"]:hover,
+    #pittsburgh input[type="reset"]:hover,
+    #pittsburgh input[type="button"]:hover,
+    #pittsburgh button:hover,
+    #pittsburgh .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #pittsburgh input[type="submit"]:hover:active,
+      #pittsburgh input[type="reset"]:hover:active,
+      #pittsburgh input[type="button"]:hover:active,
+      #pittsburgh button:hover:active,
+      #pittsburgh .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #pittsburgh input[type="submit"].primary,
+    #pittsburgh input[type="reset"].primary,
+    #pittsburgh input[type="button"].primary,
+    #pittsburgh button.primary,
+    #pittsburgh .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #pittsburgh input[type="submit"].primary:hover,
+      #pittsburgh input[type="reset"].primary:hover,
+      #pittsburgh input[type="button"].primary:hover,
+      #pittsburgh button.primary:hover,
+      #pittsburgh .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #pittsburgh input[type="submit"].primary:hover:active,
+        #pittsburgh input[type="reset"].primary:hover:active,
+        #pittsburgh input[type="button"].primary:hover:active,
+        #pittsburgh button.primary:hover:active,
+        #pittsburgh .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #pittsburgh label {
+    color: #ffffff; }
+  #pittsburgh input[type="text"],
+  #pittsburgh input[type="password"],
+  #pittsburgh input[type="email"],
+  #pittsburgh input[type="tel"],
+  #pittsburgh input[type="search"],
+  #pittsburgh input[type="url"],
+  #pittsburgh select,
+  #pittsburgh textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #pittsburgh input[type="text"]:focus,
+    #pittsburgh input[type="password"]:focus,
+    #pittsburgh input[type="email"]:focus,
+    #pittsburgh input[type="tel"]:focus,
+    #pittsburgh input[type="search"]:focus,
+    #pittsburgh input[type="url"]:focus,
+    #pittsburgh select:focus,
+    #pittsburgh textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #pittsburgh select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #pittsburgh select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #pittsburgh input[type="checkbox"] + label,
+  #pittsburgh input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #pittsburgh input[type="checkbox"] + label:before,
+    #pittsburgh input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh input[type="checkbox"]:checked + label:before,
+  #pittsburgh input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #pittsburgh input[type="checkbox"]:focus + label:before,
+  #pittsburgh input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #pittsburgh ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #pittsburgh :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #pittsburgh ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #pittsburgh :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #pittsburgh ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #pittsburgh table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #pittsburgh table th {
+    color: #ffffff; }
+  #pittsburgh table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #pittsburgh .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #pittsburgh .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #pittsburgh .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #pittsburgh .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #pittsburgh {
+      background-attachment: scroll; } }
+
+/* macau */
+#macau {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/macau_hotelRiver.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #macau input, #macau select, #macau textarea {
+    color: #ffffff; }
+  #macau a {
+    color: #ffffff; }
+  #macau strong, #macau b {
+    color: #ffffff; }
+  #macau h1, #macau h2, #macau h3, #macau h4, #macau h5, #macau h6 {
+    color: #ffffff; }
+  #macau blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #macau code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #macau hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #macau input[type="submit"],
+  #macau input[type="reset"],
+  #macau input[type="button"],
+  #macau button,
+  #macau .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #macau input[type="submit"]:hover,
+    #macau input[type="reset"]:hover,
+    #macau input[type="button"]:hover,
+    #macau button:hover,
+    #macau .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #macau input[type="submit"]:hover:active,
+      #macau input[type="reset"]:hover:active,
+      #macau input[type="button"]:hover:active,
+      #macau button:hover:active,
+      #macau .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #macau input[type="submit"].primary,
+    #macau input[type="reset"].primary,
+    #macau input[type="button"].primary,
+    #macau button.primary,
+    #macau .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #macau input[type="submit"].primary:hover,
+      #macau input[type="reset"].primary:hover,
+      #macau input[type="button"].primary:hover,
+      #macau button.primary:hover,
+      #macau .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #macau input[type="submit"].primary:hover:active,
+        #macau input[type="reset"].primary:hover:active,
+        #macau input[type="button"].primary:hover:active,
+        #macau button.primary:hover:active,
+        #macau .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #macau label {
+    color: #ffffff; }
+  #macau input[type="text"],
+  #macau input[type="password"],
+  #macau input[type="email"],
+  #macau input[type="tel"],
+  #macau input[type="search"],
+  #macau input[type="url"],
+  #macau select,
+  #macau textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #macau input[type="text"]:focus,
+    #macau input[type="password"]:focus,
+    #macau input[type="email"]:focus,
+    #macau input[type="tel"]:focus,
+    #macau input[type="search"]:focus,
+    #macau input[type="url"]:focus,
+    #macau select:focus,
+    #macau textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #macau select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #macau select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #macau input[type="checkbox"] + label,
+  #macau input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #macau input[type="checkbox"] + label:before,
+    #macau input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #macau input[type="checkbox"]:checked + label:before,
+  #macau input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #macau input[type="checkbox"]:focus + label:before,
+  #macau input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #macau ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #macau :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #macau ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #macau :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #macau ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #macau table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #macau table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #macau table th {
+    color: #ffffff; }
+  #macau table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #macau table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #macau table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #macau .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #macau .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #macau .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #macau .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #macau {
+      background-attachment: scroll; } }
+
+/* singapore */
+#singapore {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/singapore_marinaBaySands_2.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #singapore input, #singapore select, #singapore textarea {
+    color: #ffffff; }
+  #singapore a {
+    color: #ffffff; }
+  #singapore strong, #singapore b {
+    color: #ffffff; }
+  #singapore h1, #singapore h2, #singapore h3, #singapore h4, #singapore h5, #singapore h6 {
+    color: #ffffff; }
+  #singapore blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #singapore code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #singapore hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #singapore input[type="submit"],
+  #singapore input[type="reset"],
+  #singapore input[type="button"],
+  #singapore button,
+  #singapore .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #singapore input[type="submit"]:hover,
+    #singapore input[type="reset"]:hover,
+    #singapore input[type="button"]:hover,
+    #singapore button:hover,
+    #singapore .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #singapore input[type="submit"]:hover:active,
+      #singapore input[type="reset"]:hover:active,
+      #singapore input[type="button"]:hover:active,
+      #singapore button:hover:active,
+      #singapore .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #singapore input[type="submit"].primary,
+    #singapore input[type="reset"].primary,
+    #singapore input[type="button"].primary,
+    #singapore button.primary,
+    #singapore .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #singapore input[type="submit"].primary:hover,
+      #singapore input[type="reset"].primary:hover,
+      #singapore input[type="button"].primary:hover,
+      #singapore button.primary:hover,
+      #singapore .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #singapore input[type="submit"].primary:hover:active,
+        #singapore input[type="reset"].primary:hover:active,
+        #singapore input[type="button"].primary:hover:active,
+        #singapore button.primary:hover:active,
+        #singapore .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #singapore label {
+    color: #ffffff; }
+  #singapore input[type="text"],
+  #singapore input[type="password"],
+  #singapore input[type="email"],
+  #singapore input[type="tel"],
+  #singapore input[type="search"],
+  #singapore input[type="url"],
+  #singapore select,
+  #singapore textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #singapore input[type="text"]:focus,
+    #singapore input[type="password"]:focus,
+    #singapore input[type="email"]:focus,
+    #singapore input[type="tel"]:focus,
+    #singapore input[type="search"]:focus,
+    #singapore input[type="url"]:focus,
+    #singapore select:focus,
+    #singapore textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #singapore select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #singapore select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #singapore input[type="checkbox"] + label,
+  #singapore input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #singapore input[type="checkbox"] + label:before,
+    #singapore input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #singapore input[type="checkbox"]:checked + label:before,
+  #singapore input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #singapore input[type="checkbox"]:focus + label:before,
+  #singapore input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #singapore ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #singapore :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #singapore ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #singapore :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #singapore ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #singapore table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #singapore table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #singapore table th {
+    color: #ffffff; }
+  #singapore table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #singapore table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #singapore table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #singapore .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #singapore .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #singapore .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #singapore .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #singapore {
+      background-attachment: scroll; } }
+
+/* seattle */
+#seattle {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/seattle_livingplace.JPG);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #seattle input, #seattle select, #seattle textarea {
+    color: #ffffff; }
+  #seattle a {
+    color: #ffffff; }
+  #seattle strong, #seattle b {
+    color: #ffffff; }
+  #seattle h1, #seattle h2, #seattle h3, #seattle h4, #seattle h5, #seattle h6 {
+    color: #ffffff; }
+  #seattle blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #seattle code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #seattle hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #seattle input[type="submit"],
+  #seattle input[type="reset"],
+  #seattle input[type="button"],
+  #seattle button,
+  #seattle .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #seattle input[type="submit"]:hover,
+    #seattle input[type="reset"]:hover,
+    #seattle input[type="button"]:hover,
+    #seattle button:hover,
+    #seattle .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #seattle input[type="submit"]:hover:active,
+      #seattle input[type="reset"]:hover:active,
+      #seattle input[type="button"]:hover:active,
+      #seattle button:hover:active,
+      #seattle .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #seattle input[type="submit"].primary,
+    #seattle input[type="reset"].primary,
+    #seattle input[type="button"].primary,
+    #seattle button.primary,
+    #seattle .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #seattle input[type="submit"].primary:hover,
+      #seattle input[type="reset"].primary:hover,
+      #seattle input[type="button"].primary:hover,
+      #seattle button.primary:hover,
+      #seattle .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #seattle input[type="submit"].primary:hover:active,
+        #seattle input[type="reset"].primary:hover:active,
+        #seattle input[type="button"].primary:hover:active,
+        #seattle button.primary:hover:active,
+        #seattle .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #seattle label {
+    color: #ffffff; }
+  #seattle input[type="text"],
+  #seattle input[type="password"],
+  #seattle input[type="email"],
+  #seattle input[type="tel"],
+  #seattle input[type="search"],
+  #seattle input[type="url"],
+  #seattle select,
+  #seattle textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #seattle input[type="text"]:focus,
+    #seattle input[type="password"]:focus,
+    #seattle input[type="email"]:focus,
+    #seattle input[type="tel"]:focus,
+    #seattle input[type="search"]:focus,
+    #seattle input[type="url"]:focus,
+    #seattle select:focus,
+    #seattle textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #seattle select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #seattle select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #seattle input[type="checkbox"] + label,
+  #seattle input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #seattle input[type="checkbox"] + label:before,
+    #seattle input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #seattle input[type="checkbox"]:checked + label:before,
+  #seattle input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #seattle input[type="checkbox"]:focus + label:before,
+  #seattle input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #seattle ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #seattle :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #seattle ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #seattle :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #seattle ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #seattle table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #seattle table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #seattle table th {
+    color: #ffffff; }
+  #seattle table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #seattle table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #seattle table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #seattle .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #seattle .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #seattle .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #seattle .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #seattle {
+      background-attachment: scroll; } }
+
+/* vancouver */
+#vancouver {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/vancouver_gastown.JPG);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #vancouver input, #vancouver select, #vancouver textarea {
+    color: #ffffff; }
+  #vancouver a {
+    color: #ffffff; }
+  #vancouver strong, #vancouver b {
+    color: #ffffff; }
+  #vancouver h1, #vancouver h2, #vancouver h3, #vancouver h4, #vancouver h5, #vancouver h6 {
+    color: #ffffff; }
+  #vancouver blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #vancouver code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #vancouver hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #vancouver input[type="submit"],
+  #vancouver input[type="reset"],
+  #vancouver input[type="button"],
+  #vancouver button,
+  #vancouver .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #vancouver input[type="submit"]:hover,
+    #vancouver input[type="reset"]:hover,
+    #vancouver input[type="button"]:hover,
+    #vancouver button:hover,
+    #vancouver .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #vancouver input[type="submit"]:hover:active,
+      #vancouver input[type="reset"]:hover:active,
+      #vancouver input[type="button"]:hover:active,
+      #vancouver button:hover:active,
+      #vancouver .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #vancouver input[type="submit"].primary,
+    #vancouver input[type="reset"].primary,
+    #vancouver input[type="button"].primary,
+    #vancouver button.primary,
+    #vancouver .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #vancouver input[type="submit"].primary:hover,
+      #vancouver input[type="reset"].primary:hover,
+      #vancouver input[type="button"].primary:hover,
+      #vancouver button.primary:hover,
+      #vancouver .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #vancouver input[type="submit"].primary:hover:active,
+        #vancouver input[type="reset"].primary:hover:active,
+        #vancouver input[type="button"].primary:hover:active,
+        #vancouver button.primary:hover:active,
+        #vancouver .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #vancouver label {
+    color: #ffffff; }
+  #vancouver input[type="text"],
+  #vancouver input[type="password"],
+  #vancouver input[type="email"],
+  #vancouver input[type="tel"],
+  #vancouver input[type="search"],
+  #vancouver input[type="url"],
+  #vancouver select,
+  #vancouver textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #vancouver input[type="text"]:focus,
+    #vancouver input[type="password"]:focus,
+    #vancouver input[type="email"]:focus,
+    #vancouver input[type="tel"]:focus,
+    #vancouver input[type="search"]:focus,
+    #vancouver input[type="url"]:focus,
+    #vancouver select:focus,
+    #vancouver textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #vancouver select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #vancouver select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #vancouver input[type="checkbox"] + label,
+  #vancouver input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #vancouver input[type="checkbox"] + label:before,
+    #vancouver input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #vancouver input[type="checkbox"]:checked + label:before,
+  #vancouver input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #vancouver input[type="checkbox"]:focus + label:before,
+  #vancouver input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #vancouver ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #vancouver :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #vancouver ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #vancouver :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #vancouver ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #vancouver table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #vancouver table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #vancouver table th {
+    color: #ffffff; }
+  #vancouver table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #vancouver table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #vancouver table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #vancouver .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #vancouver .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #vancouver .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #vancouver .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #vancouver {
+      background-attachment: scroll; } }
+
+/* whistler */
+#whistler {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/travelnphoto/whistler_mountainstone.JPG);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #whistler input, #whistler select, #whistler textarea {
+    color: #ffffff; }
+  #whistler a {
+    color: #ffffff; }
+  #whistler strong, #whistler b {
+    color: #ffffff; }
+  #whistler h1, #whistler h2, #whistler h3, #whistler h4, #whistler h5, #whistler h6 {
+    color: #ffffff; }
+  #whistler blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #whistler code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #whistler hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #whistler input[type="submit"],
+  #whistler input[type="reset"],
+  #whistler input[type="button"],
+  #whistler button,
+  #whistler .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #whistler input[type="submit"]:hover,
+    #whistler input[type="reset"]:hover,
+    #whistler input[type="button"]:hover,
+    #whistler button:hover,
+    #whistler .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #whistler input[type="submit"]:hover:active,
+      #whistler input[type="reset"]:hover:active,
+      #whistler input[type="button"]:hover:active,
+      #whistler button:hover:active,
+      #whistler .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #whistler input[type="submit"].primary,
+    #whistler input[type="reset"].primary,
+    #whistler input[type="button"].primary,
+    #whistler button.primary,
+    #whistler .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #whistler input[type="submit"].primary:hover,
+      #whistler input[type="reset"].primary:hover,
+      #whistler input[type="button"].primary:hover,
+      #whistler button.primary:hover,
+      #whistler .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #whistler input[type="submit"].primary:hover:active,
+        #whistler input[type="reset"].primary:hover:active,
+        #whistler input[type="button"].primary:hover:active,
+        #whistler button.primary:hover:active,
+        #whistler .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #whistler label {
+    color: #ffffff; }
+  #whistler input[type="text"],
+  #whistler input[type="password"],
+  #whistler input[type="email"],
+  #whistler input[type="tel"],
+  #whistler input[type="search"],
+  #whistler input[type="url"],
+  #whistler select,
+  #whistler textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #whistler input[type="text"]:focus,
+    #whistler input[type="password"]:focus,
+    #whistler input[type="email"]:focus,
+    #whistler input[type="tel"]:focus,
+    #whistler input[type="search"]:focus,
+    #whistler input[type="url"]:focus,
+    #whistler select:focus,
+    #whistler textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #whistler select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #whistler select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #whistler input[type="checkbox"] + label,
+  #whistler input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #whistler input[type="checkbox"] + label:before,
+    #whistler input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #whistler input[type="checkbox"]:checked + label:before,
+  #whistler input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #whistler input[type="checkbox"]:focus + label:before,
+  #whistler input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #whistler ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #whistler :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #whistler ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #whistler :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #whistler ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #whistler table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #whistler table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #whistler table th {
+    color: #ffffff; }
+  #whistler table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #whistler table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #whistler table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #whistler .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #whistler .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #whistler .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #whistler .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #whistler {
       background-attachment: scroll; } }
 
 /* Footer */
