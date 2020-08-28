@@ -2467,6 +2467,450 @@ ul.icons {
     #cta {
       background-attachment: scroll; } }
 
+/* Duckieboat */
+#duckieboat {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/duckieboat.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #duckieboat input, #duckieboat select, #duckieboat textarea {
+    color: #ffffff; }
+  #duckieboat a {
+    color: #ffffff; }
+  #duckieboat strong, #duckieboat b {
+    color: #ffffff; }
+  #duckieboat h1, #duckieboat h2, #duckieboat h3, #duckieboat h4, #duckieboat h5, #duckieboat h6 {
+    color: #ffffff; }
+  #duckieboat blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat input[type="submit"],
+  #duckieboat input[type="reset"],
+  #duckieboat input[type="button"],
+  #duckieboat button,
+  #duckieboat .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #duckieboat input[type="submit"]:hover,
+    #duckieboat input[type="reset"]:hover,
+    #duckieboat input[type="button"]:hover,
+    #duckieboat button:hover,
+    #duckieboat .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #duckieboat input[type="submit"]:hover:active,
+      #duckieboat input[type="reset"]:hover:active,
+      #duckieboat input[type="button"]:hover:active,
+      #duckieboat button:hover:active,
+      #duckieboat .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #duckieboat input[type="submit"].primary,
+    #duckieboat input[type="reset"].primary,
+    #duckieboat input[type="button"].primary,
+    #duckieboat button.primary,
+    #duckieboat .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #duckieboat input[type="submit"].primary:hover,
+      #duckieboat input[type="reset"].primary:hover,
+      #duckieboat input[type="button"].primary:hover,
+      #duckieboat button.primary:hover,
+      #duckieboat .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #duckieboat input[type="submit"].primary:hover:active,
+        #duckieboat input[type="reset"].primary:hover:active,
+        #duckieboat input[type="button"].primary:hover:active,
+        #duckieboat button.primary:hover:active,
+        #duckieboat .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #duckieboat label {
+    color: #ffffff; }
+  #duckieboat input[type="text"],
+  #duckieboat input[type="password"],
+  #duckieboat input[type="email"],
+  #duckieboat input[type="tel"],
+  #duckieboat input[type="search"],
+  #duckieboat input[type="url"],
+  #duckieboat select,
+  #duckieboat textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #duckieboat input[type="text"]:focus,
+    #duckieboat input[type="password"]:focus,
+    #duckieboat input[type="email"]:focus,
+    #duckieboat input[type="tel"]:focus,
+    #duckieboat input[type="search"]:focus,
+    #duckieboat input[type="url"]:focus,
+    #duckieboat select:focus,
+    #duckieboat textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #duckieboat select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #duckieboat select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #duckieboat input[type="checkbox"] + label,
+  #duckieboat input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #duckieboat input[type="checkbox"] + label:before,
+    #duckieboat input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat input[type="checkbox"]:checked + label:before,
+  #duckieboat input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #duckieboat input[type="checkbox"]:focus + label:before,
+  #duckieboat input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #duckieboat ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #duckieboat :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #duckieboat ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #duckieboat :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #duckieboat ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #duckieboat table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #duckieboat table th {
+    color: #ffffff; }
+  #duckieboat table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #duckieboat .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #duckieboat .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #duckieboat .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #duckieboat .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #duckieboat {
+      background-attachment: scroll; } }
+
+/* Husky */
+#husky {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/husky.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #husky input, #husky select, #husky textarea {
+    color: #ffffff; }
+  #husky a {
+    color: #ffffff; }
+  #husky strong, #husky b {
+    color: #ffffff; }
+  #husky h1, #husky h2, #husky h3, #husky h4, #husky h5, #husky h6 {
+    color: #ffffff; }
+  #husky blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #husky code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #husky hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #husky input[type="submit"],
+  #husky input[type="reset"],
+  #husky input[type="button"],
+  #husky button,
+  #husky .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #husky input[type="submit"]:hover,
+    #husky input[type="reset"]:hover,
+    #husky input[type="button"]:hover,
+    #husky button:hover,
+    #husky .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #husky input[type="submit"]:hover:active,
+      #husky input[type="reset"]:hover:active,
+      #husky input[type="button"]:hover:active,
+      #husky button:hover:active,
+      #husky .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #husky input[type="submit"].primary,
+    #husky input[type="reset"].primary,
+    #husky input[type="button"].primary,
+    #husky button.primary,
+    #husky .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #husky input[type="submit"].primary:hover,
+      #husky input[type="reset"].primary:hover,
+      #husky input[type="button"].primary:hover,
+      #husky button.primary:hover,
+      #husky .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #husky input[type="submit"].primary:hover:active,
+        #husky input[type="reset"].primary:hover:active,
+        #husky input[type="button"].primary:hover:active,
+        #husky button.primary:hover:active,
+        #husky .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #husky label {
+    color: #ffffff; }
+  #husky input[type="text"],
+  #husky input[type="password"],
+  #husky input[type="email"],
+  #husky input[type="tel"],
+  #husky input[type="search"],
+  #husky input[type="url"],
+  #husky select,
+  #husky textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #husky input[type="text"]:focus,
+    #husky input[type="password"]:focus,
+    #husky input[type="email"]:focus,
+    #husky input[type="tel"]:focus,
+    #husky input[type="search"]:focus,
+    #husky input[type="url"]:focus,
+    #husky select:focus,
+    #husky textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #husky select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #husky select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #husky input[type="checkbox"] + label,
+  #husky input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #husky input[type="checkbox"] + label:before,
+    #husky input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #husky input[type="checkbox"]:checked + label:before,
+  #husky input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #husky input[type="checkbox"]:focus + label:before,
+  #husky input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #husky ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #husky :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #husky ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #husky :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #husky ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #husky table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #husky table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #husky table th {
+    color: #ffffff; }
+  #husky table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #husky table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #husky table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #husky .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #husky .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #husky .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #husky .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #husky {
+      background-attachment: scroll; } }
+
+/* Jackal */
+#jackal {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/jackal.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  #jackal input, #jackal select, #jackal textarea {
+    color: #ffffff; }
+  #jackal a {
+    color: #ffffff; }
+  #jackal strong, #jackal b {
+    color: #ffffff; }
+  #jackal h1, #jackal h2, #jackal h3, #jackal h4, #jackal h5, #jackal h6 {
+    color: #ffffff; }
+  #jackal blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25); }
+  #jackal code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+  #jackal hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #jackal input[type="submit"],
+  #jackal input[type="reset"],
+  #jackal input[type="button"],
+  #jackal button,
+  #jackal .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important; }
+    #jackal input[type="submit"]:hover,
+    #jackal input[type="reset"]:hover,
+    #jackal input[type="button"]:hover,
+    #jackal button:hover,
+    #jackal .button:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+      #jackal input[type="submit"]:hover:active,
+      #jackal input[type="reset"]:hover:active,
+      #jackal input[type="button"]:hover:active,
+      #jackal button:hover:active,
+      #jackal .button:hover:active {
+        background-color: rgba(255, 255, 255, 0.25); }
+    #jackal input[type="submit"].primary,
+    #jackal input[type="reset"].primary,
+    #jackal input[type="button"].primary,
+    #jackal button.primary,
+    #jackal .button.primary {
+      box-shadow: none;
+      background-color: #ffffff;
+      color: #ce1b28 !important; }
+      #jackal input[type="submit"].primary:hover,
+      #jackal input[type="reset"].primary:hover,
+      #jackal input[type="button"].primary:hover,
+      #jackal button.primary:hover,
+      #jackal .button.primary:hover {
+        background-color: rgba(255, 255, 255, 0.875);
+        box-shadow: none; }
+        #jackal input[type="submit"].primary:hover:active,
+        #jackal input[type="reset"].primary:hover:active,
+        #jackal input[type="button"].primary:hover:active,
+        #jackal button.primary:hover:active,
+        #jackal .button.primary:hover:active {
+          background-color: rgba(255, 255, 255, 0.5); }
+  #jackal label {
+    color: #ffffff; }
+  #jackal input[type="text"],
+  #jackal input[type="password"],
+  #jackal input[type="email"],
+  #jackal input[type="tel"],
+  #jackal input[type="search"],
+  #jackal input[type="url"],
+  #jackal select,
+  #jackal textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25); }
+    #jackal input[type="text"]:focus,
+    #jackal input[type="password"]:focus,
+    #jackal input[type="email"]:focus,
+    #jackal input[type="tel"]:focus,
+    #jackal input[type="search"]:focus,
+    #jackal input[type="url"]:focus,
+    #jackal select:focus,
+    #jackal textarea:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+  #jackal select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+    #jackal select option {
+      color: rgba(255, 255, 255, 0.75);
+      background-color: #ce1b28; }
+  #jackal input[type="checkbox"] + label,
+  #jackal input[type="radio"] + label {
+    color: rgba(255, 255, 255, 0.75); }
+    #jackal input[type="checkbox"] + label:before,
+    #jackal input[type="radio"] + label:before {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+  #jackal input[type="checkbox"]:checked + label:before,
+  #jackal input[type="radio"]:checked + label:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ce1b28; }
+  #jackal input[type="checkbox"]:focus + label:before,
+  #jackal input[type="radio"]:focus + label:before {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff; }
+  #jackal ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #jackal :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #jackal ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #jackal :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important; }
+  #jackal ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #jackal table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25); }
+    #jackal table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.075); }
+  #jackal table th {
+    color: #ffffff; }
+  #jackal table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25); }
+  #jackal table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25); }
+  #jackal table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25); }
+  #jackal .highlights .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+  #jackal .testimonials .content {
+    background: #ce1b28;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #jackal .testimonials .content .credit strong {
+      color: #ce1b28; }
+  #jackal .inner {
+    position: relative;
+    z-index: 3; }
+  @media screen and (max-width: 980px) {
+    #jackal {
+      background-attachment: scroll; } }
+
 /* hawaii */
 #hawaii {
   background-color: #ce1b28;
