@@ -1,113 +1,190 @@
-<main>
-	<section>
-		<h1>
-			<!-- Can't put flex on the <h1> or some screen readers won't announce both strings. -->
-			<span class="flex">
-				<!-- This seems like a more natural order for screen readers and we can use flex to reverse them in the layout -->
-				<span>freeCodeCamp</span> <span>Balance Sheet</span>
-			</span>
-		</h1>
-		<!-- Hide these dates from assistive tech since they will be in each table -->
-		<div id="years" aria-hidden="true">
-			<span>2019</span>
-			<span>2020</span>
-			<span>2021</span>
-		</div>
-		<div class="table-wrap">
-			<table>
-				<caption>Assets</caption>
-				<thead>
-					<tr>
-						<td></td>
-						<!-- Putting sr-only class on <th> breaks table navigation for some screen readers so we must put it on the value instead. -->
-						<th><span class="sr-only">2019</span></th>
-						<th><span class="sr-only">2020</span></th>
-						<th class="current"><span class="sr-only">2021</span></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="data">
-						<th>Cash <span class="description">This is the cash we currently have on hand.</span></th>
-						<td>$25</td>
-						<td>$30</td>
-						<td class="current">$28</td>
-					</tr>
-					<tr class="data">
-						<th>Checking <span class="description">Our primary transactional account.</span></th>
-						<td>$54</td>
-						<td>$56</td>
-						<td class="current">$53</td>
-					</tr>
-					<tr class="data">
-						<th>Savings <span class="description">Funds set aside for emergencies.</span></th>
-						<td>$500</td>
-						<td>$650</td>
-						<td class="current">$728</td>
-					</tr>
-					<tr class="total">
-						<th>Total <span class="sr-only">Assets</span></th>
-						<td>$579</td>
-						<td>$736</td>
-						<td class="current">$809</td>
-					</tr>
-				</tbody>
-			</table>
-			<table>
-				<caption>Liabilities</caption>
-				<thead>
-					<tr>
-						<td></td>
-						<th><span class="sr-only">2019</span></th>
-						<th><span class="sr-only">2020</span></th>
-						<th><span class="sr-only">2021</span></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="data">
-						<th>Loans <span class="description">The outstanding balance on our startup loan.</span></th>
-						<td>$500</td>
-						<td>$250</td>
-						<td class="current">$0</td>
-					</tr>
-					<tr class="data">
-						<th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th>
-						<td>$200</td>
-						<td>$300</td>
-						<td class="current">$400</td>
-					</tr>
-					<tr class="data">
-						<th>Credit <span class="description">The outstanding balance on our credit card.</span></th>
-						<td>$50</td>
-						<td>$50</td>
-						<td class="current">$75</td>
-					</tr>
-					<tr class="total">
-						<th>Total <span class="sr-only">Liabilities</span></th>
-						<td>$550</td>
-						<td>$750</td>
-						<td class="current">$500</td>
-					</tr>
-				</tbody>
-			</table>
-			<table>
-				<caption>Net Worth</caption>
-				<thead>
-					<tr>
-						<td></td>
-						<th><span class="sr-only">2019</span></th>
-						<th><span class="sr-only">2020</span></th>
-						<th><span class="sr-only">2021</span></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="total">
-						<th>Total <span class="sr-only">Net Worth</span></th>
-						<td>$579</td>
-						<td>$736</td>
-						<td class="current">$809</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-</main>
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONGLORY protfolio</title>
+</head>
+
+<body>
+
+    <h1>ONGLORY Portfolio Page</h1>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+    <h3 id="demo"></h3>
+    <h1 id="ethereum-price">---</h1>
+
+    <button id=update_button>UPDATE price</button>
+
+    <hr>
+    <table style="width: 800px;">
+        <caption>Total Coins</caption>
+        <tr>
+            <th rolspan=“2”>Name</th>
+            <th rolspan=“2”>Coin</th>
+            <th rolspan=“2”>Amount</th>
+            <th rolspan=“2”>Price</th>
+            <th rolspan=“2”>Value(U)</th>
+        </tr>
+        <tr>
+            <td>Bitcoin</td>
+            <td>BTC</td>
+            <td id="bitcoin_total_amount">---</td>
+            <td id="bitcoin_price">---</td>
+            <td id="bitcoin_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Ethereum</td>
+            <td>ETH</td>
+            <td id="ethereum_total_amount">---</td>
+            <td id="ethereum_price">---</td>
+            <td id="ethereum_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Binance</td>
+            <td>BNB</td>
+            <td id="binancecoin_total_amount">---</td>
+            <td id="binancecoin_price">---</td>
+            <td id="binancecoin_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Polygon</td>
+            <td>MATIC</td>
+            <td id="maticNetwork_total_amount">---</td>
+            <td id="maticNetwork_price">---</td>
+            <td id="maticNetwork_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Solana</td>
+            <td>SOL</td>
+            <td id="solana_total_amount">---</td>
+            <td id="solana_price">---</td>
+            <td id="solana_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Shiba Inu</td>
+            <td>SHIB</td>
+            <td id="shibaInu_total_amount">---</td>
+            <td id="shibaInu_price">---</td>
+            <td id="shibaInu_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Polkadot</td>
+            <td>DOT</td>
+            <td id="polkadot_total_amount">---</td>
+            <td id="polkadot_price">---</td>
+            <td id="polkadot_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Avalanche</td>
+            <td>AVAX</td>
+            <td id="avalanche_total_amount">---</td>
+            <td id="avalanche_price">---</td>
+            <td id="avalanche_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Cosmos</td>
+            <td>ATOM</td>
+            <td id="cosmos_total_amount">---</td>
+            <td id="cosmos_price">---</td>
+            <td id="cosmos_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Chainlink</td>
+            <td>LINK</td>
+            <td id="chainlink_total_amount">---</td>
+            <td id="chainlink_price">---</td>
+            <td id="chainlink_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Near</td>
+            <td>NEAR</td>
+            <td id="near_total_amount">---</td>
+            <td id="near_price">---</td>
+            <td id="near_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Decentraland</td>
+            <td>MANA</td>
+            <td id="decentraland_total_amount">---</td>
+            <td id="decentraland_price">---</td>
+            <td id="decentraland_total_val">---</td>
+        </tr>
+        <tr>
+            <td>The Sandbox</td>
+            <td>SAND</td>
+            <td id="theSandbox_total_amount">---</td>
+            <td id="theSandbox_price">---</td>
+            <td id="theSandbox_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Curve</td>
+            <td>CRV</td>
+            <td id="curveDaoToken_total_amount">---</td>
+            <td id="curveDaoToken_price">---</td>
+            <td id="curveDaoToken_total_val">---</td>
+        </tr>
+        <tr>
+            <td>FTX</td>
+            <td>FTT</td>
+            <td id="ftxToken_total_amount">---</td>
+            <td id="ftxToken_price">---</td>
+            <td id="ftxToken_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Gala</td>
+            <td>GALA</td>
+            <td id="gala_total_amount">---</td>
+            <td id="gala_price">---</td>
+            <td id="gala_total_val">---</td>
+        </tr>
+        <tr>
+            <td>DAO Maker</td>
+            <td>DAO</td>
+            <td id="daoMaker_total_amount">---</td>
+            <td id="daoMaker_price">---</td>
+            <td id="daoMaker_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Merit Circle</td>
+            <td>MC</td>
+            <td id="meritCircle_total_amount">---</td>
+            <td id="meritCircle_price">---</td>
+            <td id="meritCircle_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Stargate</td>
+            <td>STG</td>
+            <td id="stargateFinance_total_amount">---</td>
+            <td id="stargateFinance_price">---</td>
+            <td id="stargateFinance_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Polkastarter</td>
+            <td>POLS</td>
+            <td id="polkastarter_total_amount">---</td>
+            <td id="polkastarter_price">---</td>
+            <td id="polkastarter_total_val">---</td>
+        </tr>
+        <tr>
+            <td>Avalaunch</td>
+            <td>XAVA</td>
+            <td id="avalaunch_total_amount">---</td>
+            <td id="avalaunch_price">---</td>
+            <td id="avalaunch_total_val">---</td>
+        </tr>
+    </table>
+    <hr>
+
+    <script src="onglory.js"></script>
+
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+    <div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" data-ticker="true"
+        data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+
+</body>
+
+</html>
