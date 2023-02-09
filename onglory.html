@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="onglory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Onglory protfolio</title>
     <!-- https://www.anychart.com/blog/2017/12/06/pie-chart-create-javascript/ -->
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
@@ -13,190 +14,208 @@
 </head>
 
 <body>
-
+    
+    <br><br>
     <h1>Onglory Portfolio Page</h1>
 
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-        Click me to display Date and Time.</button>
-    <h3 id="demo"></h3>
-    <h1 id="ethereum-price">---</h1>
+    <p id="update_time"; style="text-align:right;"></p>
+    <!-- <h1 id="ethereum-price">---</h1> -->
 
-    <div id="container" style="width: 75%; height: 800px"></div>
+    <section id="summary">
+        <h2>Total Investment: </h2>
+        <h2>Market Value: </h2>
+        <h2>24h %: </h2>
 
-    <hr>
-    <table style="width: 75%;" ; class="SortTable">
-        <caption>Total Coins</caption>
-        <tr>
-            <th rolspan=“2”>Name</th>
-            <th rolspan=“2”>Coin</th>
-            <th rolspan=“2”>Amount</th>
-            <th rolspan=“2”>Price</th>
-            <th rolspan=“2”>Value(U)</th>
-        </tr>
-        <tr>
-            <td>USD</td>
-            <td id="usd_symbol">USD</td>
-            <td id="usd_total_amount">---</td>
-            <td id="usd_price">---</td>
-            <td id="usd_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Bitcoin</td>
-            <td id="bitcoin_symbol">BTC</td>
-            <td id="bitcoin_total_amount">---</td>
-            <td id="bitcoin_price">---</td>
-            <td id="bitcoin_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Ethereum</td>
-            <td id="ethereum_symbol">ETH</td>
-            <td id="ethereum_total_amount">---</td>
-            <td id="ethereum_price">---</td>
-            <td id="ethereum_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Binance</td>
-            <td id="binancecoin_symbol">BNB</td>
-            <td id="binancecoin_total_amount">---</td>
-            <td id="binancecoin_price">---</td>
-            <td id="binancecoin_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Polygon</td>
-            <td id="maticNetwork_symbol">MATIC</td>
-            <td id="maticNetwork_total_amount">---</td>
-            <td id="maticNetwork_price">---</td>
-            <td id="maticNetwork_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Solana</td>
-            <td id="solana_symbol">SOL</td>
-            <td id="solana_total_amount">---</td>
-            <td id="solana_price">---</td>
-            <td id="solana_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Shiba Inu</td>
-            <td id="shibaInu_symbol">SHIB</td>
-            <td id="shibaInu_total_amount">---</td>
-            <td id="shibaInu_price">---</td>
-            <td id="shibaInu_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Polkadot</td>
-            <td id="polkadot_symbol">DOT</td>
-            <td id="polkadot_total_amount">---</td>
-            <td id="polkadot_price">---</td>
-            <td id="polkadot_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Avalanche</td>
-            <td id="avalanche_symbol">AVAX</td>
-            <td id="avalanche_total_amount">---</td>
-            <td id="avalanche_price">---</td>
-            <td id="avalanche_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Cosmos</td>
-            <td id="cosmos_symbol">ATOM</td>
-            <td id="cosmos_total_amount">---</td>
-            <td id="cosmos_price">---</td>
-            <td id="cosmos_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Chainlink</td>
-            <td id="chainlink_symbol">LINK</td>
-            <td id="chainlink_total_amount">---</td>
-            <td id="chainlink_price">---</td>
-            <td id="chainlink_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Near</td>
-            <td id="near_symbol">NEAR</td>
-            <td id="near_total_amount">---</td>
-            <td id="near_price">---</td>
-            <td id="near_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Decentraland</td>
-            <td id="decentraland_symbol">MANA</td>
-            <td id="decentraland_total_amount">---</td>
-            <td id="decentraland_price">---</td>
-            <td id="decentraland_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>The Sandbox</td>
-            <td id="theSandbox_symbol">SAND</td>
-            <td id="theSandbox_total_amount">---</td>
-            <td id="theSandbox_price">---</td>
-            <td id="theSandbox_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Curve</td>
-            <td id="curveDaoToken_symbol">CRV</td>
-            <td id="curveDaoToken_total_amount">---</td>
-            <td id="curveDaoToken_price">---</td>
-            <td id="curveDaoToken_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>FTX</td>
-            <td id="ftxToken_symbol">FTT</td>
-            <td id="ftxToken_total_amount">---</td>
-            <td id="ftxToken_price">---</td>
-            <td id="ftxToken_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Gala</td>
-            <td id="gala_symbol">GALA</td>
-            <td id="gala_total_amount">---</td>
-            <td id="gala_price">---</td>
-            <td id="gala_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>DAO Maker</td>
-            <td id="daoMaker_symbol">DAO</td>
-            <td id="daoMaker_total_amount">---</td>
-            <td id="daoMaker_price">---</td>
-            <td id="daoMaker_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Merit Circle</td>
-            <td id="meritCircle_symbol">MC</td>
-            <td id="meritCircle_total_amount">---</td>
-            <td id="meritCircle_price">---</td>
-            <td id="meritCircle_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Stargate</td>
-            <td id="stargateFinance_symbol">STG</td>
-            <td id="stargateFinance_total_amount">---</td>
-            <td id="stargateFinance_price">---</td>
-            <td id="stargateFinance_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Polkastarter</td>
-            <td id="polkastarter_symbol">POLS</td>
-            <td id="polkastarter_total_amount">---</td>
-            <td id="polkastarter_price">---</td>
-            <td id="polkastarter_total_val" ; tag="sort_idx">---</td>
-        </tr>
-        <tr>
-            <td>Avalaunch</td>
-            <td id="avalaunch_symbol">XAVA</td>
-            <td id="avalaunch_total_amount">---</td>
-            <td id="avalaunch_price">---</td>
-            <td id="avalaunch_total_val" ; tag="sort_idx">---</td>
-        </tr>
-    </table>
-    <button id=update_button>UPDATE price</button>
-    <hr>
+        <div id="pie_chart" style="width: 75%; height: 800px"></div>
+
+        <hr>
+        <table style="width: 75%;" ; class="SortTable">
+            <caption>Total Coins</caption>
+            <tr>
+                <th rolspan=“2”>Name</th>
+                <th rolspan=“2”>Coin</th>
+                <th rolspan=“2”>Amount</th>
+                <th rolspan=“2”>Price</th>
+                <th rolspan=“2”>Value(U)</th>
+            </tr>
+            <tr>
+                <td>USD</td>
+                <td id="usd_symbol">USD</td>
+                <td id="usd_total_amount">---</td>
+                <td id="usd_price">---</td>
+                <td id="usd_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Bitcoin</td>
+                <td id="bitcoin_symbol">BTC</td>
+                <td id="bitcoin_total_amount">---</td>
+                <td id="bitcoin_price">---</td>
+                <td id="bitcoin_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Ethereum</td>
+                <td id="ethereum_symbol">ETH</td>
+                <td id="ethereum_total_amount">---</td>
+                <td id="ethereum_price">---</td>
+                <td id="ethereum_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Binance</td>
+                <td id="binancecoin_symbol">BNB</td>
+                <td id="binancecoin_total_amount">---</td>
+                <td id="binancecoin_price">---</td>
+                <td id="binancecoin_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Polygon</td>
+                <td id="maticNetwork_symbol">MATIC</td>
+                <td id="maticNetwork_total_amount">---</td>
+                <td id="maticNetwork_price">---</td>
+                <td id="maticNetwork_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Solana</td>
+                <td id="solana_symbol">SOL</td>
+                <td id="solana_total_amount">---</td>
+                <td id="solana_price">---</td>
+                <td id="solana_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Shiba Inu</td>
+                <td id="shibaInu_symbol">SHIB</td>
+                <td id="shibaInu_total_amount">---</td>
+                <td id="shibaInu_price">---</td>
+                <td id="shibaInu_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Polkadot</td>
+                <td id="polkadot_symbol">DOT</td>
+                <td id="polkadot_total_amount">---</td>
+                <td id="polkadot_price">---</td>
+                <td id="polkadot_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Avalanche</td>
+                <td id="avalanche_symbol">AVAX</td>
+                <td id="avalanche_total_amount">---</td>
+                <td id="avalanche_price">---</td>
+                <td id="avalanche_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Cosmos</td>
+                <td id="cosmos_symbol">ATOM</td>
+                <td id="cosmos_total_amount">---</td>
+                <td id="cosmos_price">---</td>
+                <td id="cosmos_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Chainlink</td>
+                <td id="chainlink_symbol">LINK</td>
+                <td id="chainlink_total_amount">---</td>
+                <td id="chainlink_price">---</td>
+                <td id="chainlink_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Near</td>
+                <td id="near_symbol">NEAR</td>
+                <td id="near_total_amount">---</td>
+                <td id="near_price">---</td>
+                <td id="near_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Decentraland</td>
+                <td id="decentraland_symbol">MANA</td>
+                <td id="decentraland_total_amount">---</td>
+                <td id="decentraland_price">---</td>
+                <td id="decentraland_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>The Sandbox</td>
+                <td id="theSandbox_symbol">SAND</td>
+                <td id="theSandbox_total_amount">---</td>
+                <td id="theSandbox_price">---</td>
+                <td id="theSandbox_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Curve</td>
+                <td id="curveDaoToken_symbol">CRV</td>
+                <td id="curveDaoToken_total_amount">---</td>
+                <td id="curveDaoToken_price">---</td>
+                <td id="curveDaoToken_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>FTX</td>
+                <td id="ftxToken_symbol">FTT</td>
+                <td id="ftxToken_total_amount">---</td>
+                <td id="ftxToken_price">---</td>
+                <td id="ftxToken_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Gala</td>
+                <td id="gala_symbol">GALA</td>
+                <td id="gala_total_amount">---</td>
+                <td id="gala_price">---</td>
+                <td id="gala_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>DAO Maker</td>
+                <td id="daoMaker_symbol">DAO</td>
+                <td id="daoMaker_total_amount">---</td>
+                <td id="daoMaker_price">---</td>
+                <td id="daoMaker_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Merit Circle</td>
+                <td id="meritCircle_symbol">MC</td>
+                <td id="meritCircle_total_amount">---</td>
+                <td id="meritCircle_price">---</td>
+                <td id="meritCircle_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Stargate</td>
+                <td id="stargateFinance_symbol">STG</td>
+                <td id="stargateFinance_total_amount">---</td>
+                <td id="stargateFinance_price">---</td>
+                <td id="stargateFinance_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Polkastarter</td>
+                <td id="polkastarter_symbol">POLS</td>
+                <td id="polkastarter_total_amount">---</td>
+                <td id="polkastarter_price">---</td>
+                <td id="polkastarter_total_val" ; tag="sort_idx">---</td>
+            </tr>
+            <tr>
+                <td>Avalaunch</td>
+                <td id="avalaunch_symbol">XAVA</td>
+                <td id="avalaunch_total_amount">---</td>
+                <td id="avalaunch_price">---</td>
+                <td id="avalaunch_total_val" ; tag="sort_idx">---</td>
+            </tr>
+        </table>
+        <button id=update_button>UPDATE price</button>
+        <hr>
+    </section>
+
+    <section id="spot"></section>
+    <section id="ido"></section>
+    <section id="crowdloan"></section>
+    <section id="mining"></section>
+    <section id="quant"></section>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#summary" class="active">Summary</a>
+        <a href="#spot">Spot Market</a>
+        <a href="#ido">IDO</a>
+        <a href="#crowdloan">Crowdloan</a>
+        <a href="#mining">Mining</a>
+        <a href="#quant">Quant</a>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i> -->
+        </a>
+    </div>
 
     <script src="onglory.js"></script>
-
-
-    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
-    <div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" data-ticker="true"
-        data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
 
 </body>
 

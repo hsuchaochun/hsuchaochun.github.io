@@ -1,9 +1,11 @@
 async function main() {
-    let ws = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@trade');
-    let ethereum_price = document.getElementById('ethereum-price');
+    // let ws = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@trade');
+    // let ethereum_price = document.getElementById('ethereum-price');
 
     let update_button = document.getElementById("update_button");
     update_button.addEventListener("click", updatePrice);
+
+    let update_time_ele = document.getElementById("update_time");
 
     let u_symbol_ele = document.getElementById("usd_symbol");
     let btc_symbol_ele = document.getElementById("bitcoin_symbol");
@@ -107,11 +109,11 @@ async function main() {
     let coin_total_val_set = [u_total_val, btc_total_val, eth_total_val, bnb_total_val, matic_total_val, sol_total_val, shib_total_val, dot_total_val, avax_total_val, atom_total_val, link_total_val, near_total_val, mana_total_val, sand_total_val, crv_total_val, ftt_total_val, gala_total_val, dao_total_val, mc_total_val, stg_total_val, pols_total_val, xava_total_val]
     let coin_total_val_ele_set = [u_total_val_ele, btc_total_val_ele, eth_total_val_ele, bnb_total_val_ele, matic_total_val_ele, sol_total_val_ele, shib_total_val_ele, dot_total_val_ele, avax_total_val_ele, atom_total_val_ele, link_total_val_ele, near_total_val_ele, mana_total_val_ele, sand_total_val_ele, crv_total_val_ele, ftt_total_val_ele, gala_total_val_ele, dao_total_val_ele, mc_total_val_ele, stg_total_val_ele, pols_total_val_ele, xava_total_val_ele];
 
-    ws.onmessage = (event) => {
-        let stockObject = JSON.parse(event.data);
-        //console.log(stockObject.p);
-        ethereum_price.innerText = stockObject.p;
-    };
+    // ws.onmessage = (event) => {
+    //     let stockObject = JSON.parse(event.data);
+    //     //console.log(stockObject.p);
+    //     ethereum_price.innerText = stockObject.p;
+    // };
 
     const coin_set = ["bitcoin", "ethereum", "binancecoin", "matic-network", "solana", "shiba-inu", "polkadot", "avalanche-2", "cosmos", "chainlink", "near", "decentraland", "the-sandbox", "curve-dao-token", "ftx-token", "gala", "dao-maker", "merit-circle", "stargate-finance", "polkastarter", "avalaunch"];
     const coin_amount = [23.18, 774.75, 3155.45, 421838.38, 6318.10, 450182421.00, 8928.24, 94554.37, 2988.74, 4436.21, 6253.80, 606508.00, 64735.00, 8.05, 25.10, 58997.00, 50100.81, 5220.45, 1308.63, 30022.67, 10000.90, 4119008.36]
@@ -303,8 +305,8 @@ async function main() {
         // add the data
         chart.data(data);
 
-        // display the chart in the container
-        chart.container('container');
+        // display the chart in the pie_chart
+        chart.container('pie_chart');
         chart.draw();
 
     };
@@ -348,12 +350,15 @@ async function main() {
     await updatePrice();
     // await sortTable();
     await pieChart();
+    update_time_ele.innerText = Date();
 
     // update every 10 sec
     setInterval(() => {
         updatePrice();
         // pieChart();
-        console.log('interval update', coin_obj_arr)
+        update_time_ele.innerText = Date();
+
+        console.log('interval update', coin_obj_arr);
     }, 10000);
 
     console.log('end', coin_obj_arr);
