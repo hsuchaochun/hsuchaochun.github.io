@@ -5,6 +5,7 @@ async function main() {
     let update_button = document.getElementById("update_button");
     update_button.addEventListener("click", updatePrice);
 
+    let u_price = document.getElementById("usd_price");
     let btc_price = document.getElementById("bitcoin_price");
     let eth_price = document.getElementById("ethereum_price");
     let bnb_price = document.getElementById("binancecoin_price");
@@ -27,6 +28,7 @@ async function main() {
     let pols_price = document.getElementById("polkastarter_price");
     let xava_price = document.getElementById("avalaunch_price");
     
+    let u_total_amount = document.getElementById("usd_total_amount");
     let btc_total_amount = document.getElementById("bitcoin_total_amount");
     let eth_total_amount = document.getElementById("ethereum_total_amount");
     let bnb_total_amount = document.getElementById("binancecoin_total_amount");
@@ -49,6 +51,7 @@ async function main() {
     let pols_total_amount = document.getElementById("polkastarter_total_amount");
     let xava_total_amount = document.getElementById("avalaunch_total_amount");
 
+    let u_total_val = document.getElementById("usd_total_val");
     let btc_total_val = document.getElementById("bitcoin_total_val");
     let eth_total_val = document.getElementById("ethereum_total_val");
     let bnb_total_val = document.getElementById("binancecoin_total_val");
@@ -78,7 +81,7 @@ async function main() {
     };
 
     const coin_set = ["bitcoin", "ethereum", "binancecoin", "matic-network", "solana", "shiba-inu", "polkadot", "avalanche-2", "cosmos", "chainlink", "near", "decentraland", "the-sandbox", "curve-dao-token", "ftx-token", "gala", "dao-maker", "merit-circle", "stargate-finance", "polkastarter", "avalaunch"];
-    const coin_amount = [23.18, 774.75, 3155.45, 421838.38, 6318.10, 450182421.00, 8928.24, 94554.37, 2988.74, 4436.21, 6253.80, 606508.00, 64735.00, 8.05, 25.10, 58997.00, 50100.81, 5220.45, 1308.63, 30022.67, 10000.90]
+    const coin_amount = [23.18, 774.75, 3155.45, 421838.38, 6318.10, 450182421.00, 8928.24, 94554.37, 2988.74, 4436.21, 6253.80, 606508.00, 64735.00, 8.05, 25.10, 58997.00, 50100.81, 5220.45, 1308.63, 30022.67, 10000.90, 4119008.36]
     let coin_str = ""
     let coin_obj_arr = [];
     for (i = 0; i < coin_set.length; i++) {
@@ -281,6 +284,13 @@ async function main() {
                     xava_total_val.style.textAlign="right";
                     break;
             }
+            // usd
+            u_price.innerText = "1.00";
+            u_total_amount.innerText = coin_amount[21].toLocaleString(undefined, { minimumFractionDigits: 2,  maximumFractionDigits: 2 });
+            u_total_val.innerText = (1 * coin_amount[21]).toLocaleString(undefined, { minimumFractionDigits: 2,  maximumFractionDigits: 2 });
+            u_price.style.textAlign="right";
+            u_total_amount.style.textAlign="right";
+            u_total_val.style.textAlign="right";
 
         }
 
