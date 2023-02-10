@@ -14,23 +14,100 @@
 </head>
 
 <body>
-    
+
     <br><br><br><br>
     <h1>Onglory Portfolio Page</h1>
 
-    <p id="update_time"; style="text-align:right;">Lastest Update Time: </p>
+    <p id="update_time" ; style="text-align:right;">Lastest Update Time: </p>
     <!-- <h1 id="ethereum-price">---</h1> -->
 
     <section id="summary">
-        <h2>Summary</h2>
-        <h3 id="total_invest">Total Investment: </h3>
-        <h3 id="total_val">Market Value: </h3>
-        <h3 id="total_change_per">24h %: </h3>
+        <div class="container">
+            <table class="responsive-table">
+                <caption>Investment Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Invest Class</th>
+                        <th scope="col">Invest Cost</th>
+                        <th scope="col">Market Cap</th>
+                        <th scope="col">%</th>
+                        <th scope="col">24h%</th>
+                        <th scope="col">X</th>
+                        <th scope="col">XXX</th>
+                    </tr>
+                </thead>
+                <!-- <tfoot>
+                    <tr>
+                        <td colspan="7">Sources: <a
+                                href="http://en.wikipedia.org/wiki/List_of_highest-grossing_animated_films"
+                                rel="external">Wikipedia</a> &amp; <a
+                                href="http://www.boxofficemojo.com/genres/chart/?id=animation.htm" rel="external">Box
+                                Office Mojo</a>. Data is current as of March 31, 2021.</td>
+                    </tr>
+                </tfoot> -->
+                <tbody>
+                    <tr>
+                        <th scope="row">Spot Market</th>
+                        <td id="spot_cost" data-title="Invest Cost" data-type="currency">---</td>
+                        <td id="spot_mc" data-title="Market Cap" data-type="currency">---</td>
+                        <td id="spot_per" data-title="%">---</td>
+                        <td id="spot_24" data-title="24h%">---</td>
+                        <td id="spot_x" data-title="X">---</td>
+                        <td id="spot_xxx" data-title="XXX">---</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">IDO</th>
+                        <td id="ido_cost" data-title="Invest Cost" data-type="currency">---</td>
+                        <td id="ido_mc" data-title="Market Cap" data-type="currency">---</td>
+                        <td id="ido_per" data-title="%">---</td>
+                        <td id="ido_24" data-title="24h%">---</td>
+                        <td id="ido_x" data-title="X">---</td>
+                        <td id="ido_xxx" data-title="XXX">---</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Crowdloan</th>
+                        <td id="crowdloan_cost" data-title="Invest Cost" data-type="currency">---</td>
+                        <td id="crowdloan_mc" data-title="Market Cap" data-type="currency">---</td>
+                        <td id="crowdloan_per" data-title="%">---</td>
+                        <td id="crowdloan_24" data-title="24h%">---</td>
+                        <td id="crowdloan_x" data-title="X">---</td>
+                        <td id="crowdloan_xxx" data-title="XXX">---</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mining</th>
+                        <td id="mining_cost" data-title="Invest Cost" data-type="currency">---</td>
+                        <td id="mining_mc" data-title="Market Cap" data-type="currency">---</td>
+                        <td id="mining_per" data-title="%">---</td>
+                        <td id="mining_24" data-title="24h%">---</td>
+                        <td id="mining_x" data-title="X">---</td>
+                        <td id="mining_xxx" data-title="XXX">---</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Quant</th>
+                        <td id="quant_cost" data-title="Invest Cost" data-type="currency">---</td>
+                        <td id="quant_mc" data-title="Market Cap" data-type="currency">---</td>
+                        <td id="quant_per" data-title="%">---</td>
+                        <td id="quant_24" data-title="24h%">---</td>
+                        <td id="quant_x" data-title="X">---</td>
+                        <td id="quant_xxx" data-title="XXX">---</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td id="total_cost" data-title="Invest Cost" data-type="currency">---</td>
+                        <td id="total_mc" data-title="Market Cap" data-type="currency">---</td>
+                        <td id="total_per" data-title="%">---</td>
+                        <td id="total_24" data-title="24h%">---</td>
+                        <td id="total_x" data-title="X">---</td>
+                        <td id="total_xxx" data-title="XXX">---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <div id="pie_chart" style="width: 75%; height: 800px"></div>
+        <div id="pie_chart" style="width: 100%; height: 800px"></div>
 
         <hr>
-        <table style="width: 75%;" ; class="SortTable">
+        <table style="width: 100%;" ; class="SortTable">
             <caption>Total Coins</caption>
             <tr>
                 <th rolspan=“2”>Name</th>
@@ -205,7 +282,7 @@
     <h2>IDO</h2>
 
     <section id="crowdloan"></section>
-    <h2>Crownloan</h2>
+    <h2>Crowdloan</h2>
 
     <section id="mining"></section>
     <h2>Mining</h2>
