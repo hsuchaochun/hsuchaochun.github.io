@@ -182,24 +182,28 @@ let coinbase_spot_24val = 0;
 const coinbase_spot_coin_set = ["bitcoin", "ethereum", "matic-network", "solana", "avalanche-2", "decentraland"];
 const coinbase_spot_coin_amount = [22.84, 277, 421315, 6318, 24650, 530000];
 let coinbase_spot_coin_val_set = [];
+let coinbase_spot_coin_24val_set = [];
 const binance_spot_cost = 9300000.00;
 let binance_spot_val = 0;
 let binance_spot_24val = 0;
 const binance_spot_coin_set = ["usd", "bitcoin", "ethereum", "binancecoin", "shiba-inu", "avalanche-2", "cosmos", "chainlink", "near", "decentraland", "the-sandbox", "gala", "merit-circle"];
 const binance_spot_coin_amount = [3000000.05, 0.3391, 497.3998, 3121.67, 450182421, 69790, 2988.74, 4436.21, 6253.8, 76508, 64735, 58997, 5220.45];
 let binance_spot_coin_val_set = [];
+let binance_spot_coin_24val_set = [];
 const ftx_spot_cost = 622.00;
 let ftx_spot_val = 0;
 let ftx_spot_24val = 0;
 const ftx_spot_coin_set = ["ftx-token"];
 const ftx_spot_coin_amount = [25.1];
 let ftx_spot_coin_val_set = [];
+let ftx_spot_coin_24val_set = [];
 const spot_cost = coinbase_spot_cost + binance_spot_cost + ftx_spot_cost;
 let spot_val = 0;
 let spot_24val = 0;
 const spot_coin_set = ["usd", "bitcoin", "ethereum", "binancecoin", "matic-network", "solana", "shiba-inu", "avalanche-2", "cosmos", "chainlink", "near", "decentraland", "the-sandbox", "ftx-token", "gala", "merit-circle"];
 let spot_coin_amount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let spot_coin_val_set = [];
+let spot_coin_24val_set = [];
 for (i = 0; i < spot_coin_set.length; i++) {
     idx = coinbase_spot_coin_set.indexOf(spot_coin_set[i]);
     if (idx != -1) {
@@ -224,24 +228,28 @@ let polkastarter_ido_24val = 0;
 const polkastarter_ido_coin_set = ["usd", "binancecoin", "matic-network", "avalanche-2", "polkastarter"];
 const polkastarter_ido_coin_amount = [6523.9, 32.7687, 523.375, 3.4725, 30022.67];
 let polkastarter_ido_coin_val_set = [];
+let polkastarter_ido_coin_24val_set = [];
 const avalaunch_ido_cost = 100000.00;
 let avalaunch_ido_val = 0;
 let avalaunch_ido_24val = 0;
 const avalaunch_ido_coin_set = ["usd", "avalanche-2", "avalaunch"];
 const avalaunch_ido_coin_amount = [8567.24, 102.17, 10000.9];
 let avalaunch_ido_coin_val_set = [];
+let avalaunch_ido_coin_24val_set = [];
 const daomaker_ido_cost = 250000.00;
 let daomaker_ido_val = 0;
 let daomaker_ido_24val = 0;
 const daomaker_ido_coin_set = ["usd", "ethereum", "binancecoin", "matic-network", "solana", "avalanche-2", "dao-maker"];
 const daomaker_ido_coin_amount = [19047.09, 0.3336, 0.9715, 1, 0.09794, 0.994, 50100.812];
 let daomaker_ido_coin_val_set = [];
+let daomaker_ido_coin_24val_set = [];
 const ido_cost = polkastarter_ido_cost + avalaunch_ido_cost + daomaker_ido_cost;
 let ido_val = 0;
 let ido_24val = 0;
 const ido_coin_set = ["usd", "ethereum", "binancecoin", "matic-network", "solana", "avalanche-2", "dao-maker", "polkastarter", "avalaunch"];
 let ido_coin_amount = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 let ido_coin_val_set = [];
+let ido_coin_24val_set = [];
 for (i = 0; i < ido_coin_set.length; i++) {
     idx = polkastarter_ido_coin_set.indexOf(ido_coin_set[i]);
     if (idx != -1) {
@@ -266,6 +274,7 @@ let crowdloan_24val = 0;
 const crowdloan_coin_set = ["usd", "polkadot"];
 const crowdloan_coin_amount = [1056.17, 8928.24];
 let crowdloan_coin_val_set = [];
+let crowdloan_coin_24val_set = [];
 console.log('crowdloan_cost', crowdloan_cost);
 console.log('crowdloan_coin_set', crowdloan_coin_set);
 console.log('crowdloan_coin_amount', crowdloan_coin_amount);
@@ -276,18 +285,21 @@ let curve_mining_24val = 0;
 const curve_mining_coin_set = ["usd", "ethereum", "avalanche-2", "curve-dao-token"];
 const curve_mining_coin_amount = [101525.22, 0.0158, 7.7368, 8.05];
 let curve_mining_coin_val_set = [];
+let curve_mining_coin_24val_set = [];
 const stargate_mining_cost = 20021.54;
 let stargete_mining_val = 0;
 let stargete_mining_24val = 0;
 const stargate_mining_coin_set = ["usd", "binancecoin", "stargate-finance"];
 const stargate_mining_coin_amount = [19971.54, 0.0379, 1308.6276];
 let stargate_mining_coin_val_set = [];
+let stargate_mining_coin_24val_set = [];
 const mining_cost = curve_mining_cost + stargate_mining_cost;
 let mining_val = 0;
 let mining_24val = 0;
 const mining_coin_set = ["usd", "ethereum", "binancecoin", "avalanche-2", "curve-dao-token", "stargate-finance"];
 let mining_coin_amount = [0, 0, 0, 0, 0, 0];
 let mining_coin_val_set = [];
+let mining_coin_24val_set = [];
 for (i = 0; i < mining_coin_set.length; i++) {
     idx = curve_mining_coin_set.indexOf(mining_coin_set[i]);
     if (idx != -1) {
@@ -308,30 +320,35 @@ let ssl_btc_ls_quant_24val = 0;
 const ssl_btc_ls_quant_coin_set = ["usd", "bitcoin"];
 const ssl_btc_ls_quant_coin_amount = [0, 11.52];
 let ssl_btc_ls_quant_coin_val_set = [];
+let ssl_btc_ls_quant_coin_24val_set = [];
 const ssl_eth_ls_quant_cost = 250000;
 let ssl_eth_ls_quant_val = 0;
 let ssl_eth_ls_quant_24val = 0;
 const ssl_eth_ls_quant_coin_set = ["usd", "ethereum"];
 const ssl_eth_ls_quant_coin_amount = [220551.96, 0];
 let ssl_eth_ls_quant_coin_val_set = [];
+let ssl_eth_ls_quant_coin_24val_set = [];
 const ssl_eth_l_quant_cost = 250000;
 let ssl_eth_l_quant_val = 0;
 let ssl_eth_l_quant_24val = 0;
 const ssl_eth_l_quant_coin_set = ["usd", "ethereum"];
 const ssl_eth_l_quant_coin_amount = [226555.92, 0];
 let ssl_eth_l_quant_coin_val_set = [];
+let ssl_eth_l_quant_coin_24val_set = [];
 const ssl_eth_l1_quant_cost = 250000;
 let ssl_eth_l1_quant_val = 0;
 let ssl_eth_l1_quant_24val = 0;
 const ssl_eth_l1_quant_coin_set = ["usd", "ethereum"];
 const ssl_eth_l1_quant_coin_amount = [248755.4, 0];
 let ssl_eth_l1_quant_coin_val_set = [];
+let ssl_eth_l1_quant_coin_24val_set = [];
 const quant_cost = ssl_btc_ls_quant_cost + ssl_eth_ls_quant_cost + ssl_eth_l_quant_cost + ssl_eth_l1_quant_cost;
 let quant_val = 0;
 let quant_24val = 0;
 const quant_coin_set = ["usd", "bitcoin", "ethereum"];
 let quant_coin_amount = [0, 0, 0];
 let quant_coin_val_set = [];
+let quant_coin_24val_set = [];
 for (i = 0; i < quant_coin_set.length; i++) {
     idx = ssl_btc_ls_quant_coin_set.indexOf(quant_coin_set[i]);
     if (idx != -1) {
@@ -360,6 +377,7 @@ let total_24val = 0;
 const total_coin_set = ["usd", "bitcoin", "ethereum", "binancecoin", "matic-network", "solana", "shiba-inu", "polkadot", "avalanche-2", "cosmos", "chainlink", "near", "decentraland", "the-sandbox", "curve-dao-token", "ftx-token", "gala", "dao-maker", "merit-circle", "stargate-finance", "polkastarter", "avalaunch"];
 let total_coin_amount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let total_coin_val_set = [];
+let total_coin_24val_set = [];
 for (i = 0; i < total_coin_set.length; i++) {
     idx = spot_coin_set.indexOf(total_coin_set[i]);
     if (idx != -1) total_coin_amount[i] += spot_coin_amount[idx];
@@ -405,12 +423,17 @@ async function fetch_price(url = "") {
         });
 };
 
-async function cal_val_set(coin_set, coin_amount) {
+async function cal_val_set(coin_set, coin_amount, is_24=false) {
 
     coin_val = [];
     for (i = 0; i < coin_set.length; i++) {
         idx = total_coin_set.indexOf(coin_set[i]);
-        if (idx != -1) coin_val.push(coin_price_set[idx] * coin_amount[i]);
+        if (is_24) {
+            if (idx != -1) coin_val.push(coin_24price_set[idx] * coin_amount[i]);
+        }
+        else {
+            if (idx != -1) coin_val.push(coin_price_set[idx] * coin_amount[i]);
+        }
     }
     return coin_val;
 };
@@ -425,72 +448,72 @@ async function updatePrice() {
             case total_coin_set[1]:   // bitcoin
                 btc_price = coin_obj_arr[i].price;
                 btc_24 = coin_obj_arr[i].change_per;
-                btc_24price = btc_price * (1 + btc_24 / 100);
+                btc_24price = btc_price / (1 + btc_24 / 100);
                 break;
             case total_coin_set[2]:   // ethereum
                 eth_price = coin_obj_arr[i].price;
                 eth_24 = coin_obj_arr[i].change_per;
-                eth_24price = eth_price * (1 + eth_24 / 100);
+                eth_24price = eth_price / (1 + eth_24 / 100);
                 break;
             case total_coin_set[3]:   // binancecoin
                 bnb_price = coin_obj_arr[i].price;
                 bnb_24 = coin_obj_arr[i].change_per;
-                bnb_24price = bnb_price * (1 + bnb_24 / 100);
+                bnb_24price = bnb_price / (1 + bnb_24 / 100);
                 break;
             case total_coin_set[4]:   // matic-network
                 matic_price = coin_obj_arr[i].price;
                 matic_24 = coin_obj_arr[i].change_per;
-                matic_24price = matic_price * (1 + matic_24 / 100);
+                matic_24price = matic_price / (1 + matic_24 / 100);
                 break;
             case total_coin_set[5]:   // solana
                 sol_price = coin_obj_arr[i].price;
                 sol_24 = coin_obj_arr[i].change_per;
-                sol_24price = sol_price * (1 + sol_24 / 100);
+                sol_24price = sol_price / (1 + sol_24 / 100);
                 break;
             case total_coin_set[6]:   // shiba-inu
                 shib_price = coin_obj_arr[i].price;
                 shib_24 = coin_obj_arr[i].change_per;
-                shib_24price = shib_price * (1 + shib_24 / 100);
+                shib_24price = shib_price / (1 + shib_24 / 100);
                 break;
             case total_coin_set[7]:   // polkadot
                 dot_price = coin_obj_arr[i].price;
                 dot_24 = coin_obj_arr[i].change_per;
-                dot_24price = dot_price * (1 + dot_24 / 100);
+                dot_24price = dot_price / (1 + dot_24 / 100);
                 break;
             case total_coin_set[8]:   // avalanche-2
                 avax_price = coin_obj_arr[i].price;
                 avax_24 = coin_obj_arr[i].change_per;
-                avax_24price = avax_price * (1 + avax_24 / 100);
+                avax_24price = avax_price / (1 + avax_24 / 100);
                 break;
             case total_coin_set[9]:   // cosmos
                 atom_price = coin_obj_arr[i].price;
                 atom_24 = coin_obj_arr[i].change_per;
-                atom_24price = atom_price * (1 + atom_24 / 100);
+                atom_24price = atom_price / (1 + atom_24 / 100);
                 break;
             case total_coin_set[10]:   // chainlink
                 link_price = coin_obj_arr[i].price;
                 link_24 = coin_obj_arr[i].change_per;
-                link_24price = link_price * (1 + link_24 / 100);
+                link_24price = link_price / (1 + link_24 / 100);
                 break;
             case total_coin_set[11]:  // near
                 near_price = coin_obj_arr[i].price;
                 near_24 = coin_obj_arr[i].change_per;
-                near_24price = near_price * (1 + near_24 / 100);
+                near_24price = near_price / (1 + near_24 / 100);
                 break;
             case total_coin_set[12]:  // decentraland
                 mana_price = coin_obj_arr[i].price;
                 mana_24 = coin_obj_arr[i].change_per;
-                mana_24price = mana_price * (1 + mana_24 / 100);
+                mana_24price = mana_price / (1 + mana_24 / 100);
                 break;
             case total_coin_set[13]:  // the-sandbox
                 sand_price = coin_obj_arr[i].price;
                 sand_24 = coin_obj_arr[i].change_per;
-                sand_24price = sand_price * (1 + sand_24 / 100);
+                sand_24price = sand_price / (1 + sand_24 / 100);
                 break;
             case total_coin_set[14]:  // curve-dao-token
                 crv_price = coin_obj_arr[i].price;
                 crv_24 = coin_obj_arr[i].change_per;
-                crv_24price = crv_price * (1 + crv_24 / 100);
+                crv_24price = crv_price / (1 + crv_24 / 100);
                 break;
             case total_coin_set[15]:  // ftx-token
                 ftt_price = coin_obj_arr[i].price;
@@ -500,32 +523,32 @@ async function updatePrice() {
             case total_coin_set[16]:  // gala
                 gala_price = coin_obj_arr[i].price;
                 gala_24 = coin_obj_arr[i].change_per;
-                gala_24price = gala_price * (1 + gala_24 / 100);
+                gala_24price = gala_price / (1 + gala_24 / 100);
                 break;
             case total_coin_set[17]:  // dao-maker
                 dao_price = coin_obj_arr[i].price;
                 dao_24 = coin_obj_arr[i].change_per;
-                dao_24price = dao_price * (1 + dao_24 / 100);
+                dao_24price = dao_price / (1 + dao_24 / 100);
                 break;
             case total_coin_set[18]:  // merit-circle
                 mc_price = coin_obj_arr[i].price;
                 mc_24 = coin_obj_arr[i].change_per;
-                mc_24price = mc_price * (1 + mc_24 / 100);
+                mc_24price = mc_price / (1 + mc_24 / 100);
                 break;
             case total_coin_set[19]:  // stargate-finance
                 stg_price = coin_obj_arr[i].price;
                 stg_24 = coin_obj_arr[i].change_per;
-                stg_24price = stg_price * (1 + stg_24 / 100);
+                stg_24price = stg_price / (1 + stg_24 / 100);
                 break;
             case total_coin_set[20]:  // polkastarter
                 pols_price = coin_obj_arr[i].price;
                 pols_24 = coin_obj_arr[i].change_per;
-                pols_24price = pols_price * (1 + pols_24 / 100);
+                pols_24price = pols_price / (1 + pols_24 / 100);
                 break;
             case total_coin_set[21]:  // avalaunch
                 xava_price = coin_obj_arr[i].price;
                 xava_24 = coin_obj_arr[i].change_per;
-                xava_24price = xava_price * (1 + xava_24 / 100);
+                xava_24price = xava_price / (1 + xava_24 / 100);
                 break;
         };
     };
@@ -536,92 +559,140 @@ async function updatePrice() {
 
     coinbase_spot_coin_val_set = await cal_val_set(coinbase_spot_coin_set, coinbase_spot_coin_amount);
     coinbase_spot_val = coinbase_spot_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    coinbase_spot_coin_24val_set = await cal_val_set(coinbase_spot_coin_set, coinbase_spot_coin_amount, true);
+    coinbase_spot_24val = coinbase_spot_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     binance_spot_coin_val_set = await cal_val_set(binance_spot_coin_set, binance_spot_coin_amount);
     binance_spot_val = binance_spot_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    binance_spot_coin_24val_set = await cal_val_set(binance_spot_coin_set, binance_spot_coin_amount, true);
+    binance_spot_24val = binance_spot_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     ftx_spot_coin_val_set = await cal_val_set(ftx_spot_coin_set, ftx_spot_coin_amount);
     ftx_spot_val = ftx_spot_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    ftx_spot_coin_24val_set = await cal_val_set(ftx_spot_coin_set, ftx_spot_coin_amount, true);
+    ftx_spot_24val = ftx_spot_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     spot_coin_val_set = await cal_val_set(spot_coin_set, spot_coin_amount);
     spot_val = spot_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    spot_coin_24val_set = await cal_val_set(spot_coin_set, spot_coin_amount, true);
+    spot_24val = spot_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     console.log('spot_coin_val_set', spot_coin_val_set);
     console.log('spot_val', spot_val);
+    console.log('spot_coin_24val_set', spot_coin_24val_set);
+    console.log('spot_24val', spot_24val);
 
     polkastarter_ido_coin_val_set = await cal_val_set(polkastarter_ido_coin_set, polkastarter_ido_coin_amount);
     polkastarter_ido_val = polkastarter_ido_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    polkastarter_ido_coin_24val_set = await cal_val_set(polkastarter_ido_coin_set, polkastarter_ido_coin_amount, true);
+    polkastarter_ido_24val = polkastarter_ido_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     avalaunch_ido_coin_val_set = await cal_val_set(avalaunch_ido_coin_set, avalaunch_ido_coin_amount);
     avalaunch_ido_val = avalaunch_ido_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    avalaunch_ido_coin_24val_set = await cal_val_set(avalaunch_ido_coin_set, avalaunch_ido_coin_amount, true);
+    avalaunch_ido_24val = avalaunch_ido_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     daomaker_ido_coin_val_set = await cal_val_set(daomaker_ido_coin_set, daomaker_ido_coin_amount);
     daomaker_ido_val = daomaker_ido_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    daomaker_ido_coin_24val_set = await cal_val_set(daomaker_ido_coin_set, daomaker_ido_coin_amount, true);
+    daomaker_ido_24val = daomaker_ido_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     ido_coin_val_set = await cal_val_set(ido_coin_set, ido_coin_amount);
     ido_val = ido_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    ido_coin_24val_set = await cal_val_set(ido_coin_set, ido_coin_amount, true);
+    ido_24val = ido_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     console.log('ido_coin_val_set', ido_coin_val_set);
     console.log('ido_val', ido_val);
+    console.log('ido_coin_24val_set', ido_coin_24val_set);
+    console.log('ido_24val', ido_24val);
 
     crowdloan_coin_val_set = await cal_val_set(crowdloan_coin_set, crowdloan_coin_amount);
     crowdloan_val = crowdloan_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    crowdloan_coin_24val_set = await cal_val_set(crowdloan_coin_set, crowdloan_coin_amount, true);
+    crowdloan_24val = crowdloan_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     console.log('crowdloan_coin_val_set', crowdloan_coin_val_set);
     console.log('crowdloan_val', crowdloan_val);
+    console.log('crowdloan_coin_24val_set', crowdloan_coin_24val_set);
+    console.log('crowdloan_24val', crowdloan_24val);
 
     curve_mining_coin_val_set = await cal_val_set(curve_mining_coin_set, curve_mining_coin_amount);
     curve_mining_val = curve_mining_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    curve_mining_coin_24val_set = await cal_val_set(curve_mining_coin_set, curve_mining_coin_amount, true);
+    curve_mining_24val = curve_mining_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     stargate_mining_coin_val_set = await cal_val_set(stargate_mining_coin_set, stargate_mining_coin_amount);
     stargete_mining_val = stargate_mining_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    stargate_mining_coin_24val_set = await cal_val_set(stargate_mining_coin_set, stargate_mining_coin_amount, true);
+    stargete_mining_24val = stargate_mining_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     mining_coin_val_set = await cal_val_set(mining_coin_set, mining_coin_amount);
     mining_val = mining_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    mining_coin_24val_set = await cal_val_set(mining_coin_set, mining_coin_amount, true);
+    mining_24val = mining_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     console.log('mining_coin_val_set', mining_coin_val_set);
     console.log('mining_val', mining_val);
+    console.log('mining_coin_24val_set', mining_coin_24val_set);
+    console.log('mining_24val', mining_24val);
 
     ssl_btc_ls_quant_coin_val_set = await cal_val_set(ssl_btc_ls_quant_coin_set, ssl_btc_ls_quant_coin_amount);
     ssl_btc_ls_quant_val = ssl_btc_ls_quant_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    ssl_btc_ls_quant_coin_24val_set = await cal_val_set(ssl_btc_ls_quant_coin_set, ssl_btc_ls_quant_coin_amount, true);
+    ssl_btc_ls_quant_24val = ssl_btc_ls_quant_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     ssl_eth_ls_quant_coin_val_set = await cal_val_set(ssl_eth_ls_quant_coin_set, ssl_eth_ls_quant_coin_amount);
     ssl_eth_ls_quant_val = ssl_eth_ls_quant_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    ssl_eth_ls_quant_coin_24val_set = await cal_val_set(ssl_eth_ls_quant_coin_set, ssl_eth_ls_quant_coin_amount, true);
+    ssl_eth_ls_quant_24val = ssl_eth_ls_quant_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     ssl_eth_l_quant_coin_val_set = await cal_val_set(ssl_eth_l_quant_coin_set, ssl_eth_l_quant_coin_amount);
     ssl_eth_l_quant_val = ssl_eth_l_quant_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    ssl_eth_l_quant_coin_24val_set = await cal_val_set(ssl_eth_l_quant_coin_set, ssl_eth_l_quant_coin_amount, true);
+    ssl_eth_l_quant_24val = ssl_eth_l_quant_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     ssl_eth_l1_quant_coin_val_set = await cal_val_set(ssl_eth_l1_quant_coin_set, ssl_eth_l1_quant_coin_amount);
     ssl_eth_l1_quant_val = ssl_eth_l1_quant_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    ssl_eth_l1_quant_coin_24val_set = await cal_val_set(ssl_eth_l1_quant_coin_set, ssl_eth_l1_quant_coin_amount, true);
+    ssl_eth_l1_quant_24val = ssl_eth_l1_quant_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     quant_coin_val_set = await cal_val_set(quant_coin_set, quant_coin_amount);
     quant_val = quant_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    quant_coin_24val_set = await cal_val_set(quant_coin_set, quant_coin_amount, true);
+    quant_24val = quant_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     console.log('quant_coin_val_set', quant_coin_val_set);
     console.log('quant_val', quant_val);
+    console.log('quant_coin_24val_set', quant_coin_24val_set);
+    console.log('quant_24val', quant_24val);
 
     total_coin_val_set = await cal_val_set(total_coin_set, total_coin_amount);
     total_val = total_coin_val_set.reduce(function (a, b) { return a + b; }, 0);
+    total_coin_24val_set = await cal_val_set(total_coin_set, total_coin_amount, true);
+    total_24val = total_coin_24val_set.reduce(function (a, b) { return a + b; }, 0);
     console.log('total_coin_val_set', total_coin_val_set);
     console.log('total_val', total_val);
+    console.log('total_coin_24val_set', total_coin_24val_set);
+    console.log('total_24val', total_24val);
 
     spot_cost_ele.innerText = spot_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     spot_mc_ele.innerText = spot_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     spot_per_ele.innerText = ((spot_val - spot_cost) / spot_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    // spot_24_ele.innerText = ;
+    spot_24_ele.innerText = ((spot_val-spot_24val)/spot_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // spot_x_ele.innerText = ;
     // spot_xxx_ele.innerText = ;
     ido_cost_ele.innerText = ido_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     ido_mc_ele.innerText = ido_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     ido_per_ele.innerText = ((ido_val - ido_cost) / ido_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    // ido_24_ele.innerText = ;
+    ido_24_ele.innerText = ((ido_val-ido_24val)/ido_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // ido_x_ele.innerText = ;
     // ido_xxx_ele.innerText = ;
     crowdloan_cost_ele.innerText = crowdloan_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     crowdloan_mc_ele.innerText = crowdloan_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     crowdloan_per_ele.innerText = ((crowdloan_val - crowdloan_cost) / crowdloan_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    // crowdloan_24_ele.innerText = ;
+    crowdloan_24_ele.innerText = ((crowdloan_val-crowdloan_24val)/crowdloan_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // crowdloan_x_ele.innerText = ;
     // crowdloan_xxx_ele.innerText = ;
     mining_cost_ele.innerText = mining_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     mining_mc_ele.innerText = mining_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     mining_per_ele.innerText = ((mining_val - mining_cost) / mining_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    // mining_24_ele.innerText = ;
+    mining_24_ele.innerText = ((mining_val-mining_24val)/mining_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // mining_x_ele.innerText = ;
     // mining_xxx_ele.innerText = ;
     quant_cost_ele.innerText = quant_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     quant_mc_ele.innerText = quant_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     quant_per_ele.innerText = ((quant_val - quant_cost) / quant_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    // quant_24_ele.innerText = ;
+    quant_24_ele.innerText = ((quant_val-quant_24val)/quant_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // quant_x_ele.innerText = ;
     // quant_xxx_ele.innerText = ;
     total_cost_ele.innerText = total_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     total_mc_ele.innerText = total_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     total_per_ele.innerText = ((total_val - total_cost) / total_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    // total_24_ele.innerText = ;
+    total_24_ele.innerText = ((total_val-total_24val)/total_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // total_x_ele.innerText = ;
     // total_xxx_ele.innerText = ;
 
