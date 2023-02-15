@@ -1,8 +1,9 @@
 // let ws = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@trade');
 // let ethereum_price = document.getElementById('ethereum-price');
 
-let update_button = document.getElementById("update_button");
-update_button.addEventListener("click", updatePrice);
+// let showMainChainCoinNews_button = document.getElementById("showMainChainCoinNews_button");
+// showMainChainCoinNews_button.addEventListener("click", showMainChainCoinNews);
+// let cryptoPanicWidget_mainChainCoin_ele = document.getElementById("cryptoPanicWidget_mainChainCoin");
 
 let update_time_ele = document.getElementById("update_time");
 
@@ -10,38 +11,38 @@ let spot_cost_ele = document.getElementById("spot_cost");
 let spot_mc_ele = document.getElementById("spot_mc");
 let spot_per_ele = document.getElementById("spot_per");
 let spot_24_ele = document.getElementById("spot_24");
-let spot_x_ele = document.getElementById("spot_x");
-let spot_xxx_ele = document.getElementById("spot_xxx");
+// let spot_x_ele = document.getElementById("spot_x");
+// let spot_xxx_ele = document.getElementById("spot_xxx");
 let ido_cost_ele = document.getElementById("ido_cost");
 let ido_mc_ele = document.getElementById("ido_mc");
 let ido_per_ele = document.getElementById("ido_per");
 let ido_24_ele = document.getElementById("ido_24");
-let ido_x_ele = document.getElementById("ido_x");
-let ido_xxx_ele = document.getElementById("ido_xxx");
+// let ido_x_ele = document.getElementById("ido_x");
+// let ido_xxx_ele = document.getElementById("ido_xxx");
 let crowdloan_cost_ele = document.getElementById("crowdloan_cost");
 let crowdloan_mc_ele = document.getElementById("crowdloan_mc");
 let crowdloan_per_ele = document.getElementById("crowdloan_per");
 let crowdloan_24_ele = document.getElementById("crowdloan_24");
-let crowdloan_x_ele = document.getElementById("crowdloan_x");
-let crowdloan_xxx_ele = document.getElementById("crowdloan_xxx");
+// let crowdloan_x_ele = document.getElementById("crowdloan_x");
+// let crowdloan_xxx_ele = document.getElementById("crowdloan_xxx");
 let mining_cost_ele = document.getElementById("mining_cost");
 let mining_mc_ele = document.getElementById("mining_mc");
 let mining_per_ele = document.getElementById("mining_per");
 let mining_24_ele = document.getElementById("mining_24");
-let mining_x_ele = document.getElementById("mining_x");
-let mining_xxx_ele = document.getElementById("mining_xxx");
+// let mining_x_ele = document.getElementById("mining_x");
+// let mining_xxx_ele = document.getElementById("mining_xxx");
 let quant_cost_ele = document.getElementById("quant_cost");
 let quant_mc_ele = document.getElementById("quant_mc");
 let quant_per_ele = document.getElementById("quant_per");
 let quant_24_ele = document.getElementById("quant_24");
-let quant_x_ele = document.getElementById("quant_x");
-let quant_xxx_ele = document.getElementById("quant_xxx");
+// let quant_x_ele = document.getElementById("quant_x");
+// let quant_xxx_ele = document.getElementById("quant_xxx");
 let total_cost_ele = document.getElementById("total_cost");
 let total_mc_ele = document.getElementById("total_mc");
 let total_per_ele = document.getElementById("total_per");
 let total_24_ele = document.getElementById("total_24");
-let total_x_ele = document.getElementById("total_x");
-let total_xxx_ele = document.getElementById("total_xxx");
+// let total_x_ele = document.getElementById("total_x");
+// let total_xxx_ele = document.getElementById("total_xxx");
 
 let u_symbol_ele = document.getElementById("usd_symbol");
 let btc_symbol_ele = document.getElementById("bitcoin_symbol");
@@ -423,6 +424,17 @@ async function fetch_price(url = "") {
         });
 };
 
+// async function showMainChainCoinNews() {
+//     if (showMainChainCoinNews_button.innerText == "Show Main Chain Coin News") {
+//         showMainChainCoinNews_button.innerText = "Hide Main Chain Coin News";
+//         cryptoPanicWidget_mainChainCoin_ele.style.display = "block";
+//     }
+//     else if (showMainChainCoinNews_button.innerText == "Hide Main Chain Coin News") {
+//         showMainChainCoinNews_button.innerText = "Show Main Chain Coin News";
+//         cryptoPanicWidget_mainChainCoin_ele.style.display = "none";
+//     }
+// }
+
 async function cal_val_set(coin_set, coin_amount, is_24=false) {
 
     coin_val = [];
@@ -661,37 +673,37 @@ async function updatePrice() {
 
     spot_cost_ele.innerText = spot_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     spot_mc_ele.innerText = spot_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    spot_per_ele.innerText = ((spot_val - spot_cost) / spot_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    spot_per_ele.innerText = ((spot_val - spot_cost) / spot_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     spot_24_ele.innerText = ((spot_val-spot_24val)/spot_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // spot_x_ele.innerText = ;
     // spot_xxx_ele.innerText = ;
     ido_cost_ele.innerText = ido_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     ido_mc_ele.innerText = ido_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    ido_per_ele.innerText = ((ido_val - ido_cost) / ido_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    ido_per_ele.innerText = ((ido_val - ido_cost) / ido_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     ido_24_ele.innerText = ((ido_val-ido_24val)/ido_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // ido_x_ele.innerText = ;
     // ido_xxx_ele.innerText = ;
     crowdloan_cost_ele.innerText = crowdloan_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     crowdloan_mc_ele.innerText = crowdloan_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    crowdloan_per_ele.innerText = ((crowdloan_val - crowdloan_cost) / crowdloan_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    crowdloan_per_ele.innerText = ((crowdloan_val - crowdloan_cost) / crowdloan_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     crowdloan_24_ele.innerText = ((crowdloan_val-crowdloan_24val)/crowdloan_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // crowdloan_x_ele.innerText = ;
     // crowdloan_xxx_ele.innerText = ;
     mining_cost_ele.innerText = mining_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     mining_mc_ele.innerText = mining_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    mining_per_ele.innerText = ((mining_val - mining_cost) / mining_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    mining_per_ele.innerText = ((mining_val - mining_cost) / mining_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     mining_24_ele.innerText = ((mining_val-mining_24val)/mining_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // mining_x_ele.innerText = ;
     // mining_xxx_ele.innerText = ;
     quant_cost_ele.innerText = quant_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     quant_mc_ele.innerText = quant_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    quant_per_ele.innerText = ((quant_val - quant_cost) / quant_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    quant_per_ele.innerText = ((quant_val - quant_cost) / quant_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     quant_24_ele.innerText = ((quant_val-quant_24val)/quant_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // quant_x_ele.innerText = ;
     // quant_xxx_ele.innerText = ;
     total_cost_ele.innerText = total_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     total_mc_ele.innerText = total_val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    total_per_ele.innerText = ((total_val - total_cost) / total_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    total_per_ele.innerText = ((total_val - total_cost) / total_cost * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     total_24_ele.innerText = ((total_val-total_24val)/total_24val*100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
     // total_x_ele.innerText = ;
     // total_xxx_ele.innerText = ;

@@ -32,8 +32,8 @@
                         <th scope="col">Market Cap</th>
                         <th scope="col">%</th>
                         <th scope="col">24h%</th>
-                        <th scope="col">X</th>
-                        <th scope="col">XXX</th>
+                        <!-- <th scope="col">X</th> -->
+                        <!-- <th scope="col">XXX</th> -->
                     </tr>
                 </thead>
                 <!-- <tfoot>
@@ -52,8 +52,8 @@
                         <td id="spot_mc" data-title="Market Cap" data-type="currency">---</td>
                         <td id="spot_per" data-title="%">---</td>
                         <td id="spot_24" data-title="24h%">---</td>
-                        <td id="spot_x" data-title="X">---</td>
-                        <td id="spot_xxx" data-title="XXX">---</td>
+                        <!-- <td id="spot_x" data-title="X">---</td> -->
+                        <!-- <td id="spot_xxx" data-title="XXX">---</td> -->
                     </tr>
                     <tr>
                         <th scope="row">IDO</th>
@@ -61,8 +61,8 @@
                         <td id="ido_mc" data-title="Market Cap" data-type="currency">---</td>
                         <td id="ido_per" data-title="%">---</td>
                         <td id="ido_24" data-title="24h%">---</td>
-                        <td id="ido_x" data-title="X">---</td>
-                        <td id="ido_xxx" data-title="XXX">---</td>
+                        <!-- <td id="ido_x" data-title="X">---</td> -->
+                        <!-- <td id="ido_xxx" data-title="XXX">---</td> -->
                     </tr>
                     <tr>
                         <th scope="row">Crowdloan</th>
@@ -70,8 +70,8 @@
                         <td id="crowdloan_mc" data-title="Market Cap" data-type="currency">---</td>
                         <td id="crowdloan_per" data-title="%">---</td>
                         <td id="crowdloan_24" data-title="24h%">---</td>
-                        <td id="crowdloan_x" data-title="X">---</td>
-                        <td id="crowdloan_xxx" data-title="XXX">---</td>
+                        <!-- <td id="crowdloan_x" data-title="X">---</td> -->
+                        <!-- <td id="crowdloan_xxx" data-title="XXX">---</td> -->
                     </tr>
                     <tr>
                         <th scope="row">Mining</th>
@@ -79,8 +79,8 @@
                         <td id="mining_mc" data-title="Market Cap" data-type="currency">---</td>
                         <td id="mining_per" data-title="%">---</td>
                         <td id="mining_24" data-title="24h%">---</td>
-                        <td id="mining_x" data-title="X">---</td>
-                        <td id="mining_xxx" data-title="XXX">---</td>
+                        <!-- <td id="mining_x" data-title="X">---</td> -->
+                        <!-- <td id="mining_xxx" data-title="XXX">---</td> -->
                     </tr>
                     <tr>
                         <th scope="row">Quant</th>
@@ -88,8 +88,8 @@
                         <td id="quant_mc" data-title="Market Cap" data-type="currency">---</td>
                         <td id="quant_per" data-title="%">---</td>
                         <td id="quant_24" data-title="24h%">---</td>
-                        <td id="quant_x" data-title="X">---</td>
-                        <td id="quant_xxx" data-title="XXX">---</td>
+                        <!-- <td id="quant_x" data-title="X">---</td> -->
+                        <!-- <td id="quant_xxx" data-title="XXX">---</td> -->
                     </tr>
                     <tr>
                         <th scope="row">Total</th>
@@ -97,8 +97,8 @@
                         <td id="total_mc" data-title="Market Cap" data-type="currency">---</td>
                         <td id="total_per" data-title="%">---</td>
                         <td id="total_24" data-title="24h%">---</td>
-                        <td id="total_x" data-title="X">---</td>
-                        <td id="total_xxx" data-title="XXX">---</td>
+                        <!-- <td id="total_x" data-title="X">---</td> -->
+                        <!-- <td id="total_xxx" data-title="XXX">---</td> -->
                     </tr>
                 </tbody>
             </table>
@@ -296,62 +296,38 @@
                 <td id="avalaunch_total_val" ; tag="sort_idx">---</td>
             </tr>
         </table>
-        <button id=update_button>UPDATE price</button>
         <hr>
     </section>
 
     <section id="spot">
         <h2>Spot Market</h2>
 
-        <h3>Main Coin</h3>
+        <h3>News</h3>
+        <!-- how to hide the news to make the page tidier? -->
+        <!-- <button id=showMainChainCoinNews_button>Show Main Chain Coin News</button><br> -->
         <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
             data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="BTC" data-posts_limit="3" class="CryptoPanicWidget">BTC
-            Trending News</a>
+            data-header_text_color="#FFFFFF" data-currencies="BTC,ETH" data-posts_limit="10" class="CryptoPanicWidget"
+            id="cryptoPanicWidget_mainChainCoin" style="display:block">Main Chain Coin {BTC, ETH}</a>
+        <!-- <button id=showSecondaryChainCoinNews_button>Show Secondary Chain Coin News</button><br> -->
         <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
             data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="ETH" data-posts_limit="3" class="CryptoPanicWidget">ETH
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="BNB" data-posts_limit="3" class="CryptoPanicWidget">BNB
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="AVAX" data-posts_limit="3" class="CryptoPanicWidget">AVAX
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="SOL" data-posts_limit="3" class="CryptoPanicWidget">SOL
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="MATIC" data-posts_limit="3"
-            class="CryptoPanicWidget">MATIC Trending News</a>
+            data-header_text_color="#FFFFFF" data-currencies="BNB,AVAX,SOL,MATIC" data-posts_limit="10"
+            class="CryptoPanicWidget" id="cryptoPanicWidget_secondaryChainCoin" style="display:block">Secondary Chain Coin {BNB,
+            AVAX, SOL, MATIC}</a>
 
-        <h3>Stable Coin</h3>
+        <!-- <button id=showStableCoinNews_button>Show Stable Coin News</button><br> -->
         <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
             data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="USDC" data-posts_limit="3" class="CryptoPanicWidget">USDC
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="USDT" data-posts_limit="3" class="CryptoPanicWidget">USDT
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="BUSD" data-posts_limit="3" class="CryptoPanicWidget">BUSD
-            Trending News</a>
+            data-header_text_color="#FFFFFF" data-currencies="USDC,USDT,BUSD" data-posts_limit="5"
+            class="CryptoPanicWidget" id="cryptoPanicWidget_stableCoin" style="display:block">Stable Coin {USDC, USDT,
+            BUSD}</a>
 
-        <h3>Metaverse Related Coin</h3>
+        <!-- <button id=showMetaverseRelatedCoinNews_button>Show Metaverse Related Coin News</button><br> -->
         <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
             data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="MANA" data-posts_limit="3" class="CryptoPanicWidget">MANA
-            Trending News</a>
-        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#FFFFFF"
-            data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B"
-            data-header_text_color="#FFFFFF" data-currencies="SAND" data-posts_limit="3" class="CryptoPanicWidget">SAND
-            Trending News</a>
+            data-header_text_color="#FFFFFF" data-currencies="MANA,SAND" data-posts_limit="5" class="CryptoPanicWidget"
+            id="cryptoPanicWidget_metaverseRelatedCoin" style="display:block">Metaverse Related Coin {MANA, SAND}</a>
 
         <script src="https://static.cryptopanic.com/static/js/widgets.min.js"></script>
     </section>
