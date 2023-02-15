@@ -5,6 +5,10 @@
 // showMainChainCoinNews_button.addEventListener("click", showMainChainCoinNews);
 // let cryptoPanicWidget_mainChainCoin_ele = document.getElementById("cryptoPanicWidget_mainChainCoin");
 
+// window.addEventListener("message_from_tv", (event)=>{
+//     console.log('event.data', event.data);
+// })
+
 let update_time_ele = document.getElementById("update_time");
 
 let spot_cost_ele = document.getElementById("spot_cost");
