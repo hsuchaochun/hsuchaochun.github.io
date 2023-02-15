@@ -524,122 +524,130 @@
     </div>
 
     <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;trading history </strong></p>
-    <div class="container" style="overflow-x: auto;">
-        <table class="responsive-table">
-            <caption>SSL Strategy (id: 1) Trading History</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Client Order ID</th>
-                    <th scope="col">Trading Pair</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Side</th>
-                    <th scope="col">Entry Price</th>
-                    <th scope="col">Stoploss Price</th>
-                    <th scope="col">Take Profit Price</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Remain U</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td id="" data-title="Trading Pair">BTC/BUSD</td>
-                    <td id="" data-title="Time">2022-01-13</td>
-                    <td id="" data-title="Type">limit</td>
-                    <td id="" data-title="Side">buy</td>
-                    <td id="" data-title="Entry Price" data-type="currency">18850.2</td>
-                    <td id="" data-title="Stoploss Price" data-type="currency">---</td>
-                    <td id="" data-title="Take Profit Price" data-type="currency">19623.058</td>
-                    <td id="" data-title="Quantity" data-type="currency">13.262</td>
-                    <td id="" data-title="Remain U" data-type="currency">250000</td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td id="" data-title="Trading Pair">BTC/BUSD</td>
-                    <td id="" data-title="Time">2022-01-14</td>
-                    <td id="" data-title="Type">take_profit_market</td>
-                    <td id="" data-title="Side">sell</td>
-                    <td id="" data-title="Entry Price" data-type="currency">19623.058</td>
-                    <td id="" data-title="Stoploss Price" data-type="currency">---</td>
-                    <td id="" data-title="Take Profit Price" data-type="currency">---</td>
-                    <td id="" data-title="Quantity" data-type="currency">13.262</td>
-                    <td id="" data-title="Remain U" data-type="currency">260249.997</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td id="" data-title="Trading Pair">BTC/BUSD</td>
-                    <td id="" data-title="Time">2023-01-21 08:11:17</td>
-                    <td id="" data-title="Type">limit</td>
-                    <td id="" data-title="Side">buy</td>
-                    <td id="" data-title="Entry Price" data-type="currency">22600.0</td>
-                    <td id="" data-title="Stoploss Price" data-type="currency">20898.7</td>
-                    <td id="" data-title="Take Profit Price" data-type="currency">25673.5</td>
-                    <td id="" data-title="Quantity" data-type="currency">11.515</td>
-                    <td id="" data-title="Remain U" data-type="currency">260249.997</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td id="" data-title="Trading Pair">BTC/BUSD</td>
-                    <td id="" data-title="Time">2023-02-10 04:39:18</td>
-                    <td id="" data-title="Type">stop_market</td>
-                    <td id="" data-title="Side">sell</td>
-                    <td id="" data-title="Entry Price" data-type="currency">22006.1</td>
-                    <td id="" data-title="Stoploss Price" data-type="currency">---</td>
-                    <td id="" data-title="Take Profit Price" data-type="currency">---</td>
-                    <td id="" data-title="Quantity" data-type="currency">11.515</td>
-                    <td id="" data-title="Remain U" data-type="currency">253401.0</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td id="" data-title="Trading Pair">BTC/BUSD</td>
-                    <td id="" data-title="Time">2023-02-10 04:44:26</td>
-                    <td id="" data-title="Type">limit</td>
-                    <td id="" data-title="Side">sell</td>
-                    <td id="" data-title="Entry Price" data-type="currency">22026.8</td>
-                    <td id="" data-title="Stoploss Price" data-type="currency">22831.4</td>
-                    <td id="" data-title="Take Profit Price" data-type="currency">21234.0</td>
-                    <td id="" data-title="Quantity" data-type="currency">11.5</td>
-                    <td id="" data-title="Remain U" data-type="currency">253401.0</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table style="width: 100%; overflow-x: auto;" class="SortTable">
-            <caption>SSL Strategy (id: 1) Trading History</caption>
-            <tr>
-                <!-- <th rolspan=“2”>Name</th>
-                <th rolspan=“2”>Coin</th>
-                <th rolspan=“2”>Amount</th>
-                <th rolspan=“2”>Price</th>
-                <th rolspan=“2”>24h%</th>
-                <th rolspan=“2”>Value(U)</th> -->
-                <th rolspan=“2” scope="col">Client Order ID</th>
-                <th rolspan=“2” scope="col">Trading Pair</th>
-                <th rolspan=“2” scope="col">Time</th>
-                <th rolspan=“2” scope="col">Type</th>
-                <th rolspan=“2” scope="col">Side</th>
-                <th rolspan=“2” scope="col">Entry Price</th>
-                <th rolspan=“2” scope="col">Stoploss Price</th>
-                <th rolspan=“2” scope="col">Take Profit Price</th>
-                <th rolspan=“2” scope="col">Quantity</th>
-                <th rolspan=“2” scope="col">Remain U</th>
-            </tr>
-            <!-- add data-title? -->
-            <tr>
-                <th scope="row">1</th>
-                <td id="" data-title="Trading Pair">BTC/BUSD</td>
-                <td id="" data-title="Time">2022-01-13</td>
-                <td id="" data-title="Type">limit</td>
-                <td id="" data-title="Side">buy</td>
-                <td id="" data-title="Entry Price" data-type="currency">18850.2</td>
-                <td id="" data-title="Stoploss Price" data-type="currency">---</td>
-                <td id="" data-title="Take Profit Price" data-type="currency">19623.058</td>
-                <td id="" data-title="Quantity" data-type="currency">13.262</td>
-                <td id="" data-title="Remain U" data-type="currency">250000</td>
-            </tr>
-        </table>
-    </div>
+    <table style="width: 100%; overflow-x: auto;" class="SortTable">
+        <caption>SSL Strategy (id: 1) Trading History</caption>
+        <tr>
+            <th scope="col">Client Order ID</th>
+            <th scope="col">Trading Pair</th>
+            <th scope="col">Time</th>
+            <th scope="col">Type</th>
+            <th scope="col">Side</th>
+            <th scope="col">Entry Price</th>
+            <th scope="col">Stoploss Price</th>
+            <th scope="col">Take Profit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Remain U</th>
+        </tr>
+        <!-- add data-title? -->
+        <tr>
+            <th scope="row">1</th>
+            <td id="" data-title="Trading Pair">BTC/BUSD</td>
+            <td id="" data-title="Time">2022-01-13</td>
+            <td id="" data-title="Type">limit</td>
+            <td id="" data-title="Side">buy</td>
+            <td id="" data-title="Entry Price" data-type="currency">18850.2</td>
+            <td id="" data-title="Stoploss Price" data-type="currency">---</td>
+            <td id="" data-title="Take Profit Price" data-type="currency">19623.058</td>
+            <td id="" data-title="Quantity" data-type="currency">13.262</td>
+            <td id="" data-title="Remain U" data-type="currency">250000</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td id="" data-title="Trading Pair">BTC/BUSD</td>
+            <td id="" data-title="Time">2022-01-14</td>
+            <td id="" data-title="Type">take_profit_market</td>
+            <td id="" data-title="Side">sell</td>
+            <td id="" data-title="Entry Price" data-type="currency">19623.058</td>
+            <td id="" data-title="Stoploss Price" data-type="currency">---</td>
+            <td id="" data-title="Take Profit Price" data-type="currency">---</td>
+            <td id="" data-title="Quantity" data-type="currency">13.262</td>
+            <td id="" data-title="Remain U" data-type="currency">260249.997</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td id="" data-title="Trading Pair">BTC/BUSD</td>
+            <td id="" data-title="Time">2023-01-21 08:11:17</td>
+            <td id="" data-title="Type">limit</td>
+            <td id="" data-title="Side">buy</td>
+            <td id="" data-title="Entry Price" data-type="currency">22600.0</td>
+            <td id="" data-title="Stoploss Price" data-type="currency">20898.7</td>
+            <td id="" data-title="Take Profit Price" data-type="currency">25673.5</td>
+            <td id="" data-title="Quantity" data-type="currency">11.515</td>
+            <td id="" data-title="Remain U" data-type="currency">260249.997</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td id="" data-title="Trading Pair">BTC/BUSD</td>
+            <td id="" data-title="Time">2023-02-10 04:39:18</td>
+            <td id="" data-title="Type">stop_market</td>
+            <td id="" data-title="Side">sell</td>
+            <td id="" data-title="Entry Price" data-type="currency">22006.1</td>
+            <td id="" data-title="Stoploss Price" data-type="currency">---</td>
+            <td id="" data-title="Take Profit Price" data-type="currency">---</td>
+            <td id="" data-title="Quantity" data-type="currency">11.515</td>
+            <td id="" data-title="Remain U" data-type="currency">253401.0</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td id="" data-title="Trading Pair">BTC/BUSD</td>
+            <td id="" data-title="Time">2023-02-10 04:44:26</td>
+            <td id="" data-title="Type">limit</td>
+            <td id="" data-title="Side">sell</td>
+            <td id="" data-title="Entry Price" data-type="currency">22026.8</td>
+            <td id="" data-title="Stoploss Price" data-type="currency">22831.4</td>
+            <td id="" data-title="Take Profit Price" data-type="currency">21234.0</td>
+            <td id="" data-title="Quantity" data-type="currency">11.5</td>
+            <td id="" data-title="Remain U" data-type="currency">253401.0</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width: 100%; overflow-x: auto;" class="SortTable">
+        <caption>SSL Strategy (id: 2) Trading History</caption>
+        <tr>
+            <th scope="col">Client Order ID</th>
+            <th scope="col">Trading Pair</th>
+            <th scope="col">Time</th>
+            <th scope="col">Type</th>
+            <th scope="col">Side</th>
+            <th scope="col">Entry Price</th>
+            <th scope="col">Stoploss Price</th>
+            <th scope="col">Take Profit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Remain U</th>
+        </tr>
+    </table>
+    <br>
+    <table style="width: 100%; overflow-x: auto;" class="SortTable">
+        <caption>SSL Strategy (id: 3) Trading History</caption>
+        <tr>
+            <th scope="col">Client Order ID</th>
+            <th scope="col">Trading Pair</th>
+            <th scope="col">Time</th>
+            <th scope="col">Type</th>
+            <th scope="col">Side</th>
+            <th scope="col">Entry Price</th>
+            <th scope="col">Stoploss Price</th>
+            <th scope="col">Take Profit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Remain U</th>
+        </tr>
+    </table>
+    <br>
+    <table style="width: 100%; overflow-x: auto;" class="SortTable">
+        <caption>SSL Strategy (id: 4) Trading History</caption>
+        <tr>
+            <th scope="col">Client Order ID</th>
+            <th scope="col">Trading Pair</th>
+            <th scope="col">Time</th>
+            <th scope="col">Type</th>
+            <th scope="col">Side</th>
+            <th scope="col">Entry Price</th>
+            <th scope="col">Stoploss Price</th>
+            <th scope="col">Take Profit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Remain U</th>
+        </tr>
+    </table>
 
     <div class="topnav" id="myTopnav">
         <a href="#summary" class="active">Summary</a>
